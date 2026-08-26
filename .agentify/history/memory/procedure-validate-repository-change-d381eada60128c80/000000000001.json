@@ -1,0 +1,121 @@
+{
+  "schema_version": "1",
+  "event_type": "entity_mutation",
+  "entity_type": "memory_record",
+  "entity_id": "procedure-validate-repository-change-d381eada60128c80",
+  "revision": 1,
+  "operation": "accept",
+  "actor": "knowledge-maintainer",
+  "reason": "accept procedure portfolio 71a55dc2b5ff6dcacb015e942f0284c881483412467f5d6fac2d44f99b55940e",
+  "occurred_at": "2026-08-26T06:07:42.216Z",
+  "before_digest": null,
+  "after_digest": "2877b23eca405801b98413f31e571de64646424820279639dc6eda41967d215a",
+  "after": {
+    "schema_version": "1",
+    "memory_id": "procedure-validate-repository-change-d381eada60128c80",
+    "revision": 1,
+    "kind": "procedure",
+    "owning_agent_id": "orchestrator",
+    "statement": "Run the repository's authoritative validation contract before review.",
+    "source_type": "validated_bootstrap",
+    "supporting_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+    "evidence": [
+      {
+        "evidence_id": "evidence-e7836edc46a0784aacbfbf82",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/__init__.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "5abfc54d37d47cc788b7e7a05e9514787f8c5a0b7db429d0f24d748ac89964ca",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/__init__.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-efd9c2fb3d1ae3b4ec7fb35a",
+        "source_type": "validated_bootstrap",
+        "repository_path": "pyproject.toml",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "6cca567eef4004426c3a42a94de7ef6b971992f1d7292faea3a17dd322d92717",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: pyproject.toml",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      }
+    ],
+    "confidence": "medium",
+    "freshness": "current",
+    "dependent_paths": [
+      "pyproject.toml",
+      "src/click/__init__.py"
+    ],
+    "invalidation_conditions": [
+      "Revalidate when a required context path or authoritative validation command changes."
+    ],
+    "superseded_by": null,
+    "contradicts": [],
+    "human_attribution": null,
+    "tags": [
+      "procedure",
+      "procedure-validate-repository-change"
+    ],
+    "accepted_candidate_ids": [
+      "candidate-1f25d43a73b9e23a811fd206436d5e8e"
+    ],
+    "created_at": "2026-08-26T06:07:42.216Z",
+    "updated_at": "2026-08-26T06:07:42.216Z",
+    "semantic_digest": "c83ba4d60288dc124de8f80bed5c95594ae1957c9c57996dacf3319cd4acc063",
+    "payload": {
+      "name": "validate-repository-change",
+      "trigger_conditions": [
+        "before review",
+        "release check",
+        "test implementation",
+        "validate change"
+      ],
+      "required_context_paths": [
+        "pyproject.toml",
+        "src/click/__init__.py"
+      ],
+      "allowed_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ],
+      "expected_file_patterns": [],
+      "side_effects": [
+        "May create repository-local test, build, or coverage artifacts."
+      ],
+      "validation_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ],
+      "recovery_steps": [
+        "Stop after the first deterministic failure and preserve its output.",
+        "Repair the root cause without weakening validation or repository policy.",
+        "Rerun the focused command, then the complete required validation set."
+      ]
+    },
+    "content_digest": "2877b23eca405801b98413f31e571de64646424820279639dc6eda41967d215a"
+  },
+  "event_digest": "660b0b739afd865f3730569959cb7f919bef2b9343b603084dcf96d028cbdb0c"
+}

@@ -1,0 +1,243 @@
+{
+  "schema_version": "1",
+  "memory_id": "procedure-validate-output-streams-file-wrappers-and-utility-i-o-contract-92357d48cb0b9b48",
+  "revision": 1,
+  "kind": "procedure",
+  "owning_agent_id": "specialist-output-streams-file-wrappers-and-utility-i-o-contract",
+  "statement": "Run the authoritative validation surface for Output streams, file wrappers, and utility I/O contract changes.",
+  "source_type": "validated_bootstrap",
+  "supporting_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+  "evidence": [
+    {
+      "evidence_id": "evidence-012b74608f1d82b96853539a",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/exceptions.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/exceptions.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-10931cce19369a40dbae9a49",
+      "source_type": "validated_bootstrap",
+      "repository_path": "CHANGES.md",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "73ddb9996dfc8c9dcf9367a4839ffc5b06ac2f8ce552bba5e3269cc3a2239c0e",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: CHANGES.md",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-1b004da80ca4ff8da656cc35",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_basic.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "af3e91d16bebb42750737f297da9825dce6ecc516db9295b3b0c6d6d62a1337d",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_basic.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-29fa5a306204e7f75ca01bb8",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_utils/test_LazyFile.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "d279f5f2c835167c0af587ac0399f7248e6a4887152701f6463278f46bca5f96",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_utils/test_LazyFile.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-2b5b081927004124b79143ff",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/utils.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/utils.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-72d100d4e47e3a4ac1f57b9d",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_utils/test_KeepOpenFile.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "cf78133881a317725a200ea7175fc6ea2e10553114f4647c7c00d0ef44e257db",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_utils/test_KeepOpenFile.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-842ea985fb7ba3db298b5bc9",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_utils/test_open_file.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "d42a97682952291cd20d73a1f54f8b5500f63675b643c7db82e8bc4265f3de5d",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_utils/test_open_file.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-e7836edc46a0784aacbfbf82",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/__init__.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "5abfc54d37d47cc788b7e7a05e9514787f8c5a0b7db429d0f24d748ac89964ca",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/__init__.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-f7c49907f1c298de449c16e0",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_utils/test_echo.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "90a4554e7f377da24a88a8c748849eb23ba7e2de9d96f15ad617200475fb6453",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_utils/test_echo.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-fcb5069799b20059c918610d",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/_compat.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "8db1da2965cf3e5dc66c6c53833cbc613ea1cd2440b9d0eb6aa8360eb46d4913",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/_compat.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    }
+  ],
+  "confidence": "high",
+  "freshness": "current",
+  "dependent_paths": [
+    "CHANGES.md",
+    "src/click/__init__.py",
+    "src/click/_compat.py",
+    "src/click/exceptions.py",
+    "src/click/utils.py",
+    "tests/test_basic.py",
+    "tests/test_utils/test_echo.py",
+    "tests/test_utils/test_KeepOpenFile.py",
+    "tests/test_utils/test_LazyFile.py",
+    "tests/test_utils/test_open_file.py"
+  ],
+  "invalidation_conditions": [
+    "Revalidate when a required context path or authoritative validation command changes."
+  ],
+  "superseded_by": null,
+  "contradicts": [],
+  "human_attribution": null,
+  "tags": [
+    "procedure",
+    "procedure-validate-output-streams-file-wrappers-and-utility-i-o-contract"
+  ],
+  "accepted_candidate_ids": [
+    "candidate-6f6c1d38fd8da5f9d6b3d7b5f12e10f9"
+  ],
+  "created_at": "2026-08-26T06:07:41.843Z",
+  "updated_at": "2026-08-26T06:07:41.843Z",
+  "semantic_digest": "4fdf872f3fc115afc3124aee9b09d4db7a0ea856f2e7515553581239bfdd895f",
+  "payload": {
+    "name": "validate-output-streams-file-wrappers-and-utility-i-o-contract",
+    "trigger_conditions": [
+      "Can output be bytes, contain ANSI, or target a non-tty?",
+      "Does the path need lazy or atomic opening?",
+      "Is the destination borrowed or owned by Click?",
+      "Output streams, file wrappers, and utility I/O contract change",
+      "Will an invalid filesystem name be displayed under strict encoding?"
+    ],
+    "required_context_paths": [
+      "CHANGES.md",
+      "src/click/__init__.py",
+      "src/click/_compat.py",
+      "src/click/exceptions.py",
+      "src/click/utils.py",
+      "tests/test_basic.py",
+      "tests/test_utils/test_echo.py",
+      "tests/test_utils/test_KeepOpenFile.py",
+      "tests/test_utils/test_LazyFile.py",
+      "tests/test_utils/test_open_file.py"
+    ],
+    "allowed_commands": [
+      "add a regression test under tests/",
+      "add unit tests under tests/",
+      "pytest tests/test_utils",
+      "pytest tests/test_utils/test_echo.py tests/test_utils/test_open_file.py tests/test_utils/test_LazyFile.py tests/test_utils/test_KeepOpenFile.py",
+      "uv build",
+      "uv lock if dependencies changed",
+      "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+      "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+      "uv run --locked --no-default-groups --group dev tox run -e typing",
+      "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+      "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+      "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+    ],
+    "expected_file_patterns": [
+      "CHANGES.md",
+      "src/click/__init__.py",
+      "src/click/_compat.py",
+      "src/click/exceptions.py",
+      "src/click/utils.py",
+      "tests/test_basic.py",
+      "tests/test_utils/test_echo.py",
+      "tests/test_utils/test_KeepOpenFile.py",
+      "tests/test_utils/test_LazyFile.py",
+      "tests/test_utils/test_open_file.py"
+    ],
+    "side_effects": [
+      "May create repository-local test, build, or coverage artifacts."
+    ],
+    "validation_commands": [
+      "add a regression test under tests/",
+      "add unit tests under tests/",
+      "pytest tests/test_utils",
+      "pytest tests/test_utils/test_echo.py tests/test_utils/test_open_file.py tests/test_utils/test_LazyFile.py tests/test_utils/test_KeepOpenFile.py",
+      "uv build",
+      "uv lock if dependencies changed",
+      "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+      "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+      "uv run --locked --no-default-groups --group dev tox run -e typing",
+      "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+      "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+      "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+    ],
+    "recovery_steps": [
+      "Stop after the first deterministic failure and preserve its output.",
+      "Repair the root cause without weakening validation or repository policy.",
+      "Rerun the focused command, then the complete required validation set."
+    ]
+  },
+  "content_digest": "7880e9f9d179a602e9b2a3e94b87dd61f0bc1b3bfcd7427e0c937012f74c5ace"
+}

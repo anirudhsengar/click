@@ -1,0 +1,361 @@
+{
+  "schema_version": "1",
+  "event_type": "candidate_decision",
+  "candidate_id": "candidate-d08eb680db5b62f1fcb8c1ad238d8a98",
+  "memory_id": "specialist-profile-specialist-terminal-ui-process-and-stream-lifecycle-bfe31a635dc2c755",
+  "candidate": {
+    "schema_version": "1",
+    "memory_id": "specialist-profile-specialist-terminal-ui-process-and-stream-lifecycle-bfe31a635dc2c755",
+    "kind": "specialist",
+    "proposed_by_agent_id": "orchestrator",
+    "owning_agent_id": "specialist-terminal-ui-process-and-stream-lifecycle",
+    "statement": "Owns Click's cross-platform terminal UX boundaries: progress rendering, pagers, editors, URL launching, raw input, and their subprocess/file cleanup.",
+    "source_type": "validated_bootstrap",
+    "supporting_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+    "evidence": [
+      {
+        "evidence_id": "evidence-012b74608f1d82b96853539a",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/exceptions.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/exceptions.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-10931cce19369a40dbae9a49",
+        "source_type": "validated_bootstrap",
+        "repository_path": "CHANGES.md",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "73ddb9996dfc8c9dcf9367a4839ffc5b06ac2f8ce552bba5e3269cc3a2239c0e",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: CHANGES.md",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-2b5b081927004124b79143ff",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/utils.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/utils.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-3a05579c913cc47d16c1ce18",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/termui.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "8ec8022b8e4528f873ec413194a5d1614e96da50b6c4a71f6260b326762a7e9c",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/termui.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-c757e47461422f3231b1ea39",
+        "source_type": "validated_bootstrap",
+        "repository_path": "tests/test_termui.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "d082866744a75b4732536cfa991260754c56b237d7a7bdc7d18fcbe04786057c",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_termui.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-ddf7e8c5298ffc405b3ec38e",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/_termui_impl.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "88b97d9b7a5b947b10a16d8ab269837bc84c7e55c28ba72ea5f2fb339112336a",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/_termui_impl.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-e7836edc46a0784aacbfbf82",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/__init__.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "5abfc54d37d47cc788b7e7a05e9514787f8c5a0b7db429d0f24d748ac89964ca",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/__init__.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      }
+    ],
+    "confidence": "high",
+    "dependent_paths": [
+      "CHANGES.md",
+      "src/click/__init__.py",
+      "src/click/_termui_impl.py",
+      "src/click/exceptions.py",
+      "src/click/termui.py",
+      "src/click/utils.py",
+      "tests/test_termui.py"
+    ],
+    "invalidation_conditions": [
+      "Revalidate when any specialist freshness dependency changes or disappears."
+    ],
+    "contradicts": [],
+    "human_attribution": null,
+    "tags": [
+      "concern-terminal-ui-process-and-stream-lifecycle",
+      "specialist-profile"
+    ],
+    "proposed_at": "2026-08-25T01:48:48.000Z",
+    "payload": {
+      "specialist_id": "specialist-terminal-ui-process-and-stream-lifecycle",
+      "concern": "Terminal UI process and stream lifecycle",
+      "one_line": "Owns Click's cross-platform terminal UX boundaries: progress rendering, pagers, editors, URL launching, raw input, and their subprocess/file cleanup.",
+      "covers": "ProgressBar, pager strategies, PagerWriter, editor command resolution and temp files, open_url platform dispatch, raw terminal input, the termui lazy façade, and its utility/exception stream bridges.",
+      "excludes": "Core parsing, parameter coercion, CliRunner isolation, and general echo/style semantics.",
+      "flows": [
+        {
+          "name": "pager/editor process boundary",
+          "description": "Terminal output or user text crosses into an external pager/editor without shell execution and returns through Click-owned streams/files.",
+          "steps": [
+            {
+              "path": "src/click/__init__.py",
+              "what_happens": "The public package initializer exposes pager, editor, progress, raw-input, and styling entry points."
+            },
+            {
+              "path": "src/click/termui.py",
+              "what_happens": "Public functions lazily load the implementation and resolve color/default streams."
+            },
+            {
+              "path": "src/click/_termui_impl.py",
+              "what_happens": "Pager/editor commands are tokenized into argv lists and launched with shell=False."
+            },
+            {
+              "path": "src/click/utils.py",
+              "what_happens": "echo and _LazyFile provide the stream writing and file-wrapper behavior used by terminal helpers."
+            },
+            {
+              "path": "src/click/exceptions.py",
+              "what_happens": "Terminal process and user-input failures use ClickException or Abort for consistent reporting."
+            },
+            {
+              "path": "src/click/_termui_impl.py",
+              "what_happens": "Temporary files and borrowed streams are flushed, closed, or unlinked according to platform lifecycle rules."
+            },
+            {
+              "path": "tests/test_termui.py",
+              "what_happens": "Pager, editor, progress, raw input, ANSI, and cross-platform behavior are exercised."
+            },
+            {
+              "path": "CHANGES.md",
+              "what_happens": "The release history records pager temporary-file cleanup, progress finalization, and terminal color changes."
+            }
+          ]
+        }
+      ],
+      "touchpoints": [
+        {
+          "path": "CHANGES.md",
+          "symbol": "8.5.0 terminal changes",
+          "role": "Release record for pager, progress, and ANSI lifecycle behavior.",
+          "line_range": [
+            10,
+            24
+          ],
+          "centrality": "supporting"
+        },
+        {
+          "path": "src/click/__init__.py",
+          "symbol": "terminal API re-exports",
+          "role": "Public entry point for progress, pager, editor, raw input, and style APIs.",
+          "line_range": [
+            41,
+            53
+          ],
+          "centrality": "supporting"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "symbol": "_pipepager/_tempfilepager/_PagerWriter",
+          "role": "Pager process and borrowed-stream lifecycle.",
+          "line_range": [
+            430,
+            700
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "symbol": "Editor",
+          "role": "Editor resolution, temp file handling, and subprocess argv.",
+          "line_range": [
+            700,
+            780
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "symbol": "open_url",
+          "role": "Platform-specific external launcher boundary.",
+          "line_range": [
+            795,
+            864
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "symbol": "ProgressBar",
+          "role": "Progress rendering and update/finalization semantics.",
+          "line_range": [
+            1,
+            380
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/exceptions.py",
+          "symbol": "ClickException/Abort",
+          "role": "Terminal-facing process and input failure types.",
+          "line_range": [
+            29,
+            80
+          ],
+          "centrality": "supporting"
+        },
+        {
+          "path": "src/click/termui.py",
+          "symbol": "progressbar/edit/launch/getchar",
+          "role": "Public lazy façade for terminal implementations.",
+          "line_range": [
+            348,
+            1015
+          ],
+          "centrality": "supporting"
+        },
+        {
+          "path": "src/click/utils.py",
+          "symbol": "echo/_LazyFile",
+          "role": "Terminal stream and file-wrapper bridge without owning general style semantics.",
+          "line_range": [
+            103,
+            360
+          ],
+          "centrality": "supporting"
+        },
+        {
+          "path": "tests/test_termui.py",
+          "symbol": "terminal UI tests",
+          "role": "Behavioral and platform regression suite.",
+          "line_range": [
+            1,
+            1498
+          ],
+          "centrality": "supporting"
+        }
+      ],
+      "invariants": [
+        {
+          "rule": "External pager/editor processes use argv lists and shell=False.",
+          "why": "User-controlled environment values must not become shell commands.",
+          "reference": "src/click/_termui_impl.py"
+        },
+        {
+          "rule": "Pager writers never close borrowed streams.",
+          "why": "CliRunner and embedding callers own those streams.",
+          "reference": "src/click/_termui_impl.py"
+        },
+        {
+          "rule": "Temporary pager files close before unlink.",
+          "why": "Windows rejects unlinking open files and can mask the original error.",
+          "reference": "src/click/_termui_impl.py"
+        },
+        {
+          "rule": "Progress rendering differs between tty and non-tty/platform paths.",
+          "why": "ANSI cursor controls are unsuitable for non-tty or legacy Windows output.",
+          "reference": "src/click/_termui_impl.py"
+        }
+      ],
+      "pitfalls": [
+        {
+          "risk": "Adding a platform branch without preserving pager/editor temp cleanup.",
+          "consequence": "Windows PermissionError or leaked temporary files can replace the original failure.",
+          "reference": "src/click/_termui_impl.py"
+        },
+        {
+          "risk": "Bypassing render_finish when progress updates are below update_min_steps.",
+          "consequence": "A completed progress bar can render below 100 percent.",
+          "reference": "src/click/_termui_impl.py"
+        },
+        {
+          "risk": "Assuming an editor or xdg-open exists in minimal environments.",
+          "consequence": "External launch can fail with FileNotFoundError or a misleading success status.",
+          "reference": "src/click/_termui_impl.py"
+        }
+      ],
+      "entry_questions": [
+        "Are Windows, macOS, Cygwin, and POSIX branches covered?",
+        "Does every progress exit path flush final intervals?",
+        "Does this touch a borrowed stream or a Click-owned temporary file?",
+        "Is the command split with shlex and launched without a shell?"
+      ],
+      "context_paths": [
+        "CHANGES.md",
+        "src/click/__init__.py",
+        "src/click/_termui_impl.py",
+        "src/click/exceptions.py",
+        "src/click/termui.py",
+        "src/click/utils.py",
+        "tests/test_termui.py"
+      ],
+      "related_specialists": [
+        "specialist-clirunner-isolation-and-terminal-stream-lifecycle",
+        "specialist-command-invocation-and-context-lifecycle",
+        "specialist-output-streams-file-wrappers-and-utility-i-o-contract",
+        "specialist-paramtype-conversion-contract"
+      ],
+      "validation_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "pytest tests/test_termui.py",
+        "pytest tests/test_utils/test_echo_via_pager.py",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ]
+    },
+    "candidate_id": "candidate-d08eb680db5b62f1fcb8c1ad238d8a98",
+    "candidate_digest": "05d8016d5aa1ff59dc5c96b1968076b188c46da4f6b39e4c9a4aa41cd1164377"
+  },
+  "decision": "accepted",
+  "actor": "knowledge-maintainer",
+  "reason": "accept specialist portfolio 71a55dc2b5ff6dcacb015e942f0284c881483412467f5d6fac2d44f99b55940e",
+  "occurred_at": "2026-08-26T06:07:41.269Z",
+  "candidate_digest": "05d8016d5aa1ff59dc5c96b1968076b188c46da4f6b39e4c9a4aa41cd1164377",
+  "resulting_memory_id": "specialist-profile-specialist-terminal-ui-process-and-stream-lifecycle-bfe31a635dc2c755",
+  "event_digest": "68eb073b5542d6b109b4a0ef393641afc1c48810d30bc14f45c589c85170db26"
+}

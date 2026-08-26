@@ -1,0 +1,147 @@
+{
+  "format": "agentify_task_policy_configuration",
+  "schema_version": "2",
+  "configured": true,
+  "repository": {
+    "repository_id": "1346942598",
+    "full_name": "anirudhsengar/click",
+    "default_branch": "main",
+    "current_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+    "current_branch": "main",
+    "origin_url": "https://github.com/anirudhsengar/click.git",
+    "actor_login": "anirudhsengar",
+    "actor_permission": "admin",
+    "default_branch_policy": "unprotected"
+  },
+  "model_network_posture": "denied-by-default",
+  "dependency_change_policy": "maintainer-approval-required",
+  "application_merge": "disabled",
+  "application_deployment": "disabled",
+  "protected_path_policy_known": true,
+  "validation_services_attested": true,
+  "validation_execution": {
+    "mode": "maintainer-approved-unsandboxed",
+    "child_environment_credentials": "removed",
+    "repository_mutation": "detected-and-rejected",
+    "network_isolation": "not-provided",
+    "os_sandbox": "not-provided"
+  },
+  "validation_approval": {
+    "mode": "maintainer-approved-unsandboxed",
+    "approved_by": "anirudhsengar",
+    "approved_at": "2026-08-26T05:35:03.759Z",
+    "package_json_sha256": "6cca567eef4004426c3a42a94de7ef6b971992f1d7292faea3a17dd322d92717",
+    "manifest_path": "pyproject.toml",
+    "lockfile": {
+      "path": "uv.lock",
+      "sha256": "ccc151df44b77b6d2a3c4ed36badde2e1210bcfcddae7a4a6ff28a6afe3092cf"
+    },
+    "commands_sha256": "d689fefcd183c1e0b56b37bb739f835c3b3bbfd84600a012e24a0b5927dab4b8"
+  },
+  "policy": {
+    "policy_digest": "32f0d633c9f749fc5d8125acc87c21846311d880ddc16349814068760ca16302",
+    "approval_required": true,
+    "approval_ttl_ms": 86400000,
+    "maximum_cost_usd": 5,
+    "maximum_runtime_ms": 3600000,
+    "maximum_model_calls": 12,
+    "maximum_fix_cycles": 2,
+    "protected_paths": [
+      ".agentify/policies",
+      ".git",
+      ".github/agentify",
+      ".github/agentify-task-policy.json",
+      ".github/workflows",
+      "AGENTS.md",
+      "build.gradle",
+      "build.gradle.kts",
+      "bun.lock",
+      "Cargo.lock",
+      "Cargo.toml",
+      "Gemfile",
+      "Gemfile.lock",
+      "go.mod",
+      "go.sum",
+      "gradle.lockfile",
+      "makefile",
+      "Makefile",
+      "npm-shrinkwrap.json",
+      "package-lock.json",
+      "package.json",
+      "Pipfile",
+      "Pipfile.lock",
+      "pnpm-lock.yaml",
+      "poetry.lock",
+      "pom.xml",
+      "pyproject.toml",
+      "requirements.txt",
+      "SETUP.md",
+      "setup.py",
+      "uv.lock",
+      "yarn.lock"
+    ],
+    "allowed_write_paths": [
+      "CHANGES.md",
+      "docs",
+      "examples",
+      "LICENSE.txt",
+      "README.md",
+      "src",
+      "tests"
+    ],
+    "validation_commands": [
+      {
+        "command_id": "test-pytest",
+        "argv": [
+          "uv",
+          "run",
+          "pytest"
+        ],
+        "cwd": ".",
+        "timeout_ms": 1800000,
+        "required": true,
+        "mutation_allowed": false,
+        "source": "repository-policy"
+      },
+      {
+        "command_id": "lint-ruff",
+        "argv": [
+          "uv",
+          "run",
+          "ruff",
+          "check",
+          "."
+        ],
+        "cwd": ".",
+        "timeout_ms": 600000,
+        "required": true,
+        "mutation_allowed": false,
+        "source": "repository-policy"
+      },
+      {
+        "command_id": "typecheck-mypy",
+        "argv": [
+          "uv",
+          "run",
+          "mypy"
+        ],
+        "cwd": ".",
+        "timeout_ms": 600000,
+        "required": true,
+        "mutation_allowed": false,
+        "source": "repository-policy"
+      }
+    ],
+    "forbidden_actions": [
+      "application deployment",
+      "application merge",
+      "auto-merge",
+      "credential exposure",
+      "default-branch application write",
+      "force-push",
+      "policy expansion by model output",
+      "unapproved dependency change"
+    ]
+  },
+  "instructions": "This repository-specific policy was generated from verified repository identity, tracked application paths, passing validation commands, and installer attestation of unsandboxed repository validation."
+}

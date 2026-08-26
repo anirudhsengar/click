@@ -1,0 +1,202 @@
+{
+  "schema_version": "1",
+  "event_type": "candidate_decision",
+  "candidate_id": "candidate-1234732a299f789c9c47f670686a4b8f",
+  "memory_id": "procedure-validate-terminal-ui-process-and-stream-lifecycle-86462220df26eaa0",
+  "candidate": {
+    "schema_version": "1",
+    "memory_id": "procedure-validate-terminal-ui-process-and-stream-lifecycle-86462220df26eaa0",
+    "kind": "procedure",
+    "proposed_by_agent_id": "orchestrator",
+    "owning_agent_id": "specialist-terminal-ui-process-and-stream-lifecycle",
+    "statement": "Run the authoritative validation surface for Terminal UI process and stream lifecycle changes.",
+    "source_type": "validated_bootstrap",
+    "supporting_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+    "evidence": [
+      {
+        "evidence_id": "evidence-012b74608f1d82b96853539a",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/exceptions.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/exceptions.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-10931cce19369a40dbae9a49",
+        "source_type": "validated_bootstrap",
+        "repository_path": "CHANGES.md",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "73ddb9996dfc8c9dcf9367a4839ffc5b06ac2f8ce552bba5e3269cc3a2239c0e",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: CHANGES.md",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-2b5b081927004124b79143ff",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/utils.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/utils.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-3a05579c913cc47d16c1ce18",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/termui.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "8ec8022b8e4528f873ec413194a5d1614e96da50b6c4a71f6260b326762a7e9c",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/termui.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-c757e47461422f3231b1ea39",
+        "source_type": "validated_bootstrap",
+        "repository_path": "tests/test_termui.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "d082866744a75b4732536cfa991260754c56b237d7a7bdc7d18fcbe04786057c",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_termui.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-ddf7e8c5298ffc405b3ec38e",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/_termui_impl.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "88b97d9b7a5b947b10a16d8ab269837bc84c7e55c28ba72ea5f2fb339112336a",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/_termui_impl.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-e7836edc46a0784aacbfbf82",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/__init__.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "5abfc54d37d47cc788b7e7a05e9514787f8c5a0b7db429d0f24d748ac89964ca",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/__init__.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      }
+    ],
+    "confidence": "high",
+    "dependent_paths": [
+      "CHANGES.md",
+      "src/click/__init__.py",
+      "src/click/_termui_impl.py",
+      "src/click/exceptions.py",
+      "src/click/termui.py",
+      "src/click/utils.py",
+      "tests/test_termui.py"
+    ],
+    "invalidation_conditions": [
+      "Revalidate when a required context path or authoritative validation command changes."
+    ],
+    "contradicts": [],
+    "human_attribution": null,
+    "tags": [
+      "procedure",
+      "procedure-validate-terminal-ui-process-and-stream-lifecycle"
+    ],
+    "proposed_at": "2026-08-25T01:48:48.000Z",
+    "payload": {
+      "name": "validate-terminal-ui-process-and-stream-lifecycle",
+      "trigger_conditions": [
+        "Are Windows, macOS, Cygwin, and POSIX branches covered?",
+        "Does every progress exit path flush final intervals?",
+        "Does this touch a borrowed stream or a Click-owned temporary file?",
+        "Is the command split with shlex and launched without a shell?",
+        "Terminal UI process and stream lifecycle change"
+      ],
+      "required_context_paths": [
+        "CHANGES.md",
+        "src/click/__init__.py",
+        "src/click/_termui_impl.py",
+        "src/click/exceptions.py",
+        "src/click/termui.py",
+        "src/click/utils.py",
+        "tests/test_termui.py"
+      ],
+      "allowed_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "pytest tests/test_termui.py",
+        "pytest tests/test_utils/test_echo_via_pager.py",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ],
+      "expected_file_patterns": [
+        "CHANGES.md",
+        "src/click/__init__.py",
+        "src/click/_termui_impl.py",
+        "src/click/exceptions.py",
+        "src/click/termui.py",
+        "src/click/utils.py",
+        "tests/test_termui.py"
+      ],
+      "side_effects": [
+        "May create repository-local test, build, or coverage artifacts."
+      ],
+      "validation_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "pytest tests/test_termui.py",
+        "pytest tests/test_utils/test_echo_via_pager.py",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ],
+      "recovery_steps": [
+        "Stop after the first deterministic failure and preserve its output.",
+        "Repair the root cause without weakening validation or repository policy.",
+        "Rerun the focused command, then the complete required validation set."
+      ]
+    },
+    "candidate_id": "candidate-1234732a299f789c9c47f670686a4b8f",
+    "candidate_digest": "f8f06a0715b208b62e37c2ad423ca0239cd4e0dfa59ac7469e31bbfb93ebef85"
+  },
+  "decision": "accepted",
+  "actor": "knowledge-maintainer",
+  "reason": "accept procedure portfolio 71a55dc2b5ff6dcacb015e942f0284c881483412467f5d6fac2d44f99b55940e",
+  "occurred_at": "2026-08-26T06:07:42.415Z",
+  "candidate_digest": "f8f06a0715b208b62e37c2ad423ca0239cd4e0dfa59ac7469e31bbfb93ebef85",
+  "resulting_memory_id": "procedure-validate-terminal-ui-process-and-stream-lifecycle-86462220df26eaa0",
+  "event_digest": "69b0c23a3fd15d54ac59d22f3021b2aa25a78edbd4232c3c5e746f40e4683a2f"
+}

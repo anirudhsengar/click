@@ -1,0 +1,220 @@
+{
+  "schema_version": "1",
+  "event_type": "candidate_decision",
+  "candidate_id": "candidate-916a99cd134978182c9ed35b320d9a70",
+  "memory_id": "procedure-validate-paramtype-conversion-contract-4099488674470cbd",
+  "candidate": {
+    "schema_version": "1",
+    "memory_id": "procedure-validate-paramtype-conversion-contract-4099488674470cbd",
+    "kind": "procedure",
+    "proposed_by_agent_id": "orchestrator",
+    "owning_agent_id": "specialist-paramtype-conversion-contract",
+    "statement": "Run the authoritative validation surface for ParamType conversion contract changes.",
+    "source_type": "validated_bootstrap",
+    "supporting_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+    "evidence": [
+      {
+        "evidence_id": "evidence-012b74608f1d82b96853539a",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/exceptions.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/exceptions.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-10931cce19369a40dbae9a49",
+        "source_type": "validated_bootstrap",
+        "repository_path": "CHANGES.md",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "73ddb9996dfc8c9dcf9367a4839ffc5b06ac2f8ce552bba5e3269cc3a2239c0e",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: CHANGES.md",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-2b5b081927004124b79143ff",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/utils.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/utils.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-2c796925f8d65aafac11bfbb",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/types.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "1e988904a7a7f68abad630c7fb9c038a4345fa2e6701c976a6e51f10bdfb52dd",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/types.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-3a05579c913cc47d16c1ce18",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/termui.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "8ec8022b8e4528f873ec413194a5d1614e96da50b6c4a71f6260b326762a7e9c",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/termui.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-d823357d734a339b78ccab08",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/core.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "4c65a613c1c407dce907a4e123b12cec5fe0f62088a8b9f86fabd4b60c4b6d78",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/core.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-deecdfcbe1f32ee6a5621b54",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/parser.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "a09f9f53fde6bf1ba022e36d1da0804d9e7a9601261d18208c9892a84818ae30",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/parser.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-e7836edc46a0784aacbfbf82",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/__init__.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "5abfc54d37d47cc788b7e7a05e9514787f8c5a0b7db429d0f24d748ac89964ca",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/__init__.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      }
+    ],
+    "confidence": "high",
+    "dependent_paths": [
+      "CHANGES.md",
+      "src/click/__init__.py",
+      "src/click/core.py",
+      "src/click/exceptions.py",
+      "src/click/parser.py",
+      "src/click/termui.py",
+      "src/click/types.py",
+      "src/click/utils.py"
+    ],
+    "invalidation_conditions": [
+      "Revalidate when a required context path or authoritative validation command changes."
+    ],
+    "contradicts": [],
+    "human_attribution": null,
+    "tags": [
+      "procedure",
+      "procedure-validate-paramtype-conversion-contract"
+    ],
+    "proposed_at": "2026-08-25T01:48:48.000Z",
+    "payload": {
+      "name": "validate-paramtype-conversion-contract",
+      "trigger_conditions": [
+        "Can the value already be the target Python type?",
+        "Does conversion run from prompt where param/ctx are None?",
+        "Does this preserve composite arity, envvar splitting, and BadParameter propagation?",
+        "For File/Path, is resource cleanup registered only with a Context?",
+        "ParamType conversion contract change"
+      ],
+      "required_context_paths": [
+        "CHANGES.md",
+        "src/click/__init__.py",
+        "src/click/core.py",
+        "src/click/exceptions.py",
+        "src/click/parser.py",
+        "src/click/termui.py",
+        "src/click/types.py",
+        "src/click/utils.py"
+      ],
+      "allowed_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "pytest tests/test_info_dict.py",
+        "pytest tests/test_types.py",
+        "pytest tests/test_utils/test_prompt.py",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ],
+      "expected_file_patterns": [
+        "CHANGES.md",
+        "src/click/__init__.py",
+        "src/click/core.py",
+        "src/click/exceptions.py",
+        "src/click/parser.py",
+        "src/click/termui.py",
+        "src/click/types.py",
+        "src/click/utils.py"
+      ],
+      "side_effects": [
+        "May create repository-local test, build, or coverage artifacts."
+      ],
+      "validation_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "pytest tests/test_info_dict.py",
+        "pytest tests/test_types.py",
+        "pytest tests/test_utils/test_prompt.py",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ],
+      "recovery_steps": [
+        "Stop after the first deterministic failure and preserve its output.",
+        "Repair the root cause without weakening validation or repository policy.",
+        "Rerun the focused command, then the complete required validation set."
+      ]
+    },
+    "candidate_id": "candidate-916a99cd134978182c9ed35b320d9a70",
+    "candidate_digest": "0347c77038526c0cb7be58a28af42478c6ab96e051d11f918d8df1996beaf310"
+  },
+  "decision": "accepted",
+  "actor": "knowledge-maintainer",
+  "reason": "accept procedure portfolio 71a55dc2b5ff6dcacb015e942f0284c881483412467f5d6fac2d44f99b55940e",
+  "occurred_at": "2026-08-26T06:07:42.050Z",
+  "candidate_digest": "0347c77038526c0cb7be58a28af42478c6ab96e051d11f918d8df1996beaf310",
+  "resulting_memory_id": "procedure-validate-paramtype-conversion-contract-4099488674470cbd",
+  "event_digest": "a85d3ff62aed4252c83ca8e37f21e61d95f2c54bef888e1ce92bf49aa4d5dce8"
+}

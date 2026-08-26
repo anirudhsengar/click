@@ -1,0 +1,421 @@
+{
+  "schema_version": "1",
+  "memory_id": "specialist-profile-specialist-output-streams-file-wrappers-and-utility-i-o-contract-40dcfa33200c3c84",
+  "revision": 1,
+  "kind": "specialist",
+  "owning_agent_id": "specialist-output-streams-file-wrappers-and-utility-i-o-contract",
+  "statement": "Owns Click's reusable output and filesystem utility semantics: safe text/bytes emission, standard-stream ownership, lazy or atomic files, display-safe filenames, and platform config paths.",
+  "source_type": "validated_bootstrap",
+  "supporting_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+  "evidence": [
+    {
+      "evidence_id": "evidence-012b74608f1d82b96853539a",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/exceptions.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/exceptions.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-10931cce19369a40dbae9a49",
+      "source_type": "validated_bootstrap",
+      "repository_path": "CHANGES.md",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "73ddb9996dfc8c9dcf9367a4839ffc5b06ac2f8ce552bba5e3269cc3a2239c0e",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: CHANGES.md",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-1b004da80ca4ff8da656cc35",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_basic.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "af3e91d16bebb42750737f297da9825dce6ecc516db9295b3b0c6d6d62a1337d",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_basic.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-29fa5a306204e7f75ca01bb8",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_utils/test_LazyFile.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "d279f5f2c835167c0af587ac0399f7248e6a4887152701f6463278f46bca5f96",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_utils/test_LazyFile.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-2b5b081927004124b79143ff",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/utils.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/utils.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-72d100d4e47e3a4ac1f57b9d",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_utils/test_KeepOpenFile.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "cf78133881a317725a200ea7175fc6ea2e10553114f4647c7c00d0ef44e257db",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_utils/test_KeepOpenFile.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-842ea985fb7ba3db298b5bc9",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_utils/test_open_file.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "d42a97682952291cd20d73a1f54f8b5500f63675b643c7db82e8bc4265f3de5d",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_utils/test_open_file.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-e7836edc46a0784aacbfbf82",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/__init__.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "5abfc54d37d47cc788b7e7a05e9514787f8c5a0b7db429d0f24d748ac89964ca",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/__init__.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-f7c49907f1c298de449c16e0",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_utils/test_echo.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "90a4554e7f377da24a88a8c748849eb23ba7e2de9d96f15ad617200475fb6453",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_utils/test_echo.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-fcb5069799b20059c918610d",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/_compat.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "8db1da2965cf3e5dc66c6c53833cbc613ea1cd2440b9d0eb6aa8360eb46d4913",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/_compat.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    }
+  ],
+  "confidence": "high",
+  "freshness": "current",
+  "dependent_paths": [
+    "CHANGES.md",
+    "src/click/__init__.py",
+    "src/click/_compat.py",
+    "src/click/exceptions.py",
+    "src/click/utils.py",
+    "tests/test_basic.py",
+    "tests/test_utils/test_echo.py",
+    "tests/test_utils/test_KeepOpenFile.py",
+    "tests/test_utils/test_LazyFile.py",
+    "tests/test_utils/test_open_file.py"
+  ],
+  "invalidation_conditions": [
+    "Revalidate when any specialist freshness dependency changes or disappears."
+  ],
+  "superseded_by": null,
+  "contradicts": [],
+  "human_attribution": null,
+  "tags": [
+    "concern-output-streams-file-wrappers-and-utility-i-o-contract",
+    "specialist-profile"
+  ],
+  "accepted_candidate_ids": [
+    "candidate-d84f9e5864a7c123be4380e8898a36bf"
+  ],
+  "created_at": "2026-08-26T06:07:40.698Z",
+  "updated_at": "2026-08-26T06:07:40.698Z",
+  "semantic_digest": "a45efa561566636f630fba252d2a27d721d7baa684863579b40720cb99152a8f",
+  "payload": {
+    "specialist_id": "specialist-output-streams-file-wrappers-and-utility-i-o-contract",
+    "concern": "Output streams, file wrappers, and utility I/O contract",
+    "one_line": "Owns Click's reusable output and filesystem utility semantics: safe text/bytes emission, standard-stream ownership, lazy or atomic files, display-safe filenames, and platform config paths.",
+    "covers": "echo, open_file, _LazyFile, _KeepOpenFile, _PacifyFlushWrapper, stream adapters, ANSI stripping at output boundaries, format_filename, get_app_dir, and their public exports and regression tests.",
+    "excludes": "Command dispatch and parameter conversion policy, CliRunner's process-global capture orchestration, and external pager/editor subprocess policy.",
+    "flows": [
+      {
+        "name": "public utility call to safe output or file lifecycle",
+        "description": "The public package exports utility functions, utility code resolves compatible streams or files, and errors and tests establish ownership and cleanup behavior.",
+        "steps": [
+          {
+            "path": "src/click/__init__.py",
+            "what_happens": "The public package initializer exports echo, open_file, format_filename, and get_app_dir."
+          },
+          {
+            "path": "src/click/utils.py",
+            "what_happens": "echo normalizes text/bytes and ANSI output, while open_file selects standard streams, lazy wrappers, or atomic stream opening."
+          },
+          {
+            "path": "src/click/_compat.py",
+            "what_happens": "Platform adapters provide default text streams, binary writers, ANSI decisions, and open_stream ownership information."
+          },
+          {
+            "path": "src/click/exceptions.py",
+            "what_happens": "Lazy file failures become FileError with a display-safe filename and OS hint."
+          },
+          {
+            "path": "tests/test_utils/test_echo.py",
+            "what_happens": "Text, bytes, color, stderr, and flushing behavior are asserted."
+          },
+          {
+            "path": "tests/test_utils/test_open_file.py",
+            "what_happens": "Standard-stream borrowing, lazy access, atomic writes, and close ownership are asserted."
+          }
+        ]
+      }
+    ],
+    "touchpoints": [
+      {
+        "path": "CHANGES.md",
+        "symbol": "8.5.0 utility changes",
+        "role": "Release record for output color validation and utility deprecations.",
+        "line_range": [
+          24,
+          39
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "src/click/__init__.py",
+        "symbol": "utility re-exports",
+        "role": "Public package entry point for echo, open_file, format_filename, and get_app_dir.",
+        "line_range": [
+          70,
+          73
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "src/click/_compat.py",
+        "symbol": "open_stream/default stream adapters",
+        "role": "Platform-specific stream and file ownership primitives consumed by utils.",
+        "line_range": [
+          1,
+          250
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "src/click/exceptions.py",
+        "symbol": "FileError",
+        "role": "User-facing failure boundary for lazy file opening.",
+        "line_range": [
+          250,
+          330
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "src/click/utils.py",
+        "symbol": "_PacifyFlushWrapper",
+        "role": "Broken-pipe-safe final flush wrapper.",
+        "line_range": [
+          535,
+          575
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "src/click/utils.py",
+        "symbol": "echo",
+        "role": "Core text/bytes/ANSI output contract with explicit flushing.",
+        "line_range": [
+          220,
+          330
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "src/click/utils.py",
+        "symbol": "format_filename/get_app_dir",
+        "role": "Safe filename display and platform configuration-directory resolution.",
+        "line_range": [
+          430,
+          570
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "src/click/utils.py",
+        "symbol": "open_file/_LazyFile/_KeepOpenFile",
+        "role": "Standard-stream ownership, lazy opening, and atomic file lifecycle.",
+        "line_range": [
+          103,
+          210
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "tests/test_basic.py",
+        "symbol": "basic output assertions",
+        "role": "Integration coverage that public command output reaches the expected stream.",
+        "line_range": [
+          8,
+          35
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "tests/test_utils/test_echo.py",
+        "symbol": "echo tests",
+        "role": "Regression coverage for stream encoding, bytes, ANSI, stderr, and flushing.",
+        "line_range": [
+          1,
+          250
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "tests/test_utils/test_KeepOpenFile.py",
+        "symbol": "KeepOpenFile tests",
+        "role": "Regression coverage for borrowed stream ownership.",
+        "line_range": [
+          1,
+          200
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "tests/test_utils/test_LazyFile.py",
+        "symbol": "LazyFile tests",
+        "role": "Regression coverage for deferred open and close semantics.",
+        "line_range": [
+          1,
+          250
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "tests/test_utils/test_open_file.py",
+        "symbol": "open_file tests",
+        "role": "Regression coverage for standard-stream ownership and file modes.",
+        "line_range": [
+          1,
+          300
+        ],
+        "centrality": "supporting"
+      }
+    ],
+    "invariants": [
+      {
+        "rule": "echo always flushes and strips ANSI sequences when the destination is not an interactive terminal unless color is forced.",
+        "why": "Library callers rely on deterministic output across terminals, files, and captured streams.",
+        "reference": "src/click/utils.py"
+      },
+      {
+        "rule": "open_file wraps borrowed standard streams so context-manager exit does not close the caller-owned stream.",
+        "why": "CLI applications commonly use '-' and must not invalidate process streams.",
+        "reference": "src/click/utils.py"
+      },
+      {
+        "rule": "Lazy and atomic writes preserve Click's FileError boundary and close-before-replace behavior.",
+        "why": "Opening or replacing a file must report a Click error without leaking handles or masking the original failure.",
+        "reference": "src/click/utils.py"
+      },
+      {
+        "rule": "Filename formatting replaces invalid filesystem bytes or surrogates before UI output.",
+        "why": "Strict output encodings must not fail merely while displaying a path.",
+        "reference": "src/click/utils.py"
+      }
+    ],
+    "pitfalls": [
+      {
+        "risk": "Closing a stream returned for '-' or treating a lazy wrapper as already open.",
+        "consequence": "An embedding application's stdin/stdout can be closed or file errors move to the wrong phase.",
+        "reference": "src/click/utils.py"
+      },
+      {
+        "risk": "Writing bytes or ANSI text through an incompatible stream without the utility adapters.",
+        "consequence": "Output is corrupted, raises an encoding error, or leaks styling into redirected output.",
+        "reference": "src/click/utils.py"
+      },
+      {
+        "risk": "Changing atomic or platform-specific open_stream behavior without testing ownership.",
+        "consequence": "Temporary files remain or replacement fails on Windows and other supported platforms.",
+        "reference": "tests/test_utils/test_open_file.py"
+      }
+    ],
+    "entry_questions": [
+      "Can output be bytes, contain ANSI, or target a non-tty?",
+      "Does the path need lazy or atomic opening?",
+      "Is the destination borrowed or owned by Click?",
+      "Will an invalid filesystem name be displayed under strict encoding?"
+    ],
+    "context_paths": [
+      "CHANGES.md",
+      "src/click/__init__.py",
+      "src/click/_compat.py",
+      "src/click/exceptions.py",
+      "src/click/utils.py",
+      "tests/test_basic.py",
+      "tests/test_utils/test_echo.py",
+      "tests/test_utils/test_KeepOpenFile.py",
+      "tests/test_utils/test_LazyFile.py",
+      "tests/test_utils/test_open_file.py"
+    ],
+    "related_specialists": [
+      "specialist-clirunner-isolation-and-terminal-stream-lifecycle",
+      "specialist-command-invocation-and-context-lifecycle",
+      "specialist-paramtype-conversion-contract",
+      "specialist-terminal-ui-process-and-stream-lifecycle"
+    ],
+    "validation_commands": [
+      "add a regression test under tests/",
+      "add unit tests under tests/",
+      "pytest tests/test_utils",
+      "pytest tests/test_utils/test_echo.py tests/test_utils/test_open_file.py tests/test_utils/test_LazyFile.py tests/test_utils/test_KeepOpenFile.py",
+      "uv build",
+      "uv lock if dependencies changed",
+      "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+      "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+      "uv run --locked --no-default-groups --group dev tox run -e typing",
+      "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+      "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+      "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+    ]
+  },
+  "content_digest": "dbc1c12fd47e5577aac59f30f81f5f230ed6ffe2453a8083c186c3cab672a0b8"
+}

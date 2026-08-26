@@ -1,0 +1,342 @@
+{
+  "format": "agentify_team_memory",
+  "schema_version": "1",
+  "revision": 18,
+  "root": ".agentify",
+  "repository_id": "anirudhsengar/click",
+  "created_at": "2026-08-26T05:35:17.701Z",
+  "updated_at": "2026-08-26T06:07:42.500Z",
+  "entries": [
+    {
+      "path": ".agentify/.gitignore",
+      "kind": "ignore_rules",
+      "sha256": "2b36b4d4e3c6eceefe15702c59b6176359f9321c6bd093dfdbcb87d900400a6c",
+      "bytes": 95
+    },
+    {
+      "path": ".agentify/agents/orchestrator.json",
+      "kind": "agent_identity",
+      "sha256": "394024bd89e5e552e133af157f46043eab5c2d9c8d331592908f8049cad76efe",
+      "bytes": 1220
+    },
+    {
+      "path": ".agentify/agents/roles/builder.json",
+      "kind": "agent_identity",
+      "sha256": "c6b9137f7b425217c230fd4f94db58d4adceb2fd31cc006b7bae81f66dfce9f5",
+      "bytes": 1192
+    },
+    {
+      "path": ".agentify/agents/roles/knowledge-maintainer.json",
+      "kind": "agent_identity",
+      "sha256": "f38597bc86aa397c15628e14794df980eb88c1bb49d300c35e91816ed269449f",
+      "bytes": 1239
+    },
+    {
+      "path": ".agentify/agents/roles/reviewer.json",
+      "kind": "agent_identity",
+      "sha256": "b9b9ba5318afd514a9772022745c5b7cd070ce5ea8eec66fa0a1f9abaf6c3130",
+      "bytes": 1197
+    },
+    {
+      "path": ".agentify/agents/specialists/specialist-clirunner-isolation-and-terminal-stream-lifecycle.json",
+      "kind": "agent_identity",
+      "sha256": "1d7d3a757947b71125341155beb7b92c7f23b5b02e48c92d355e4f3a1d41c37b",
+      "bytes": 3742
+    },
+    {
+      "path": ".agentify/agents/specialists/specialist-command-invocation-and-context-lifecycle.json",
+      "kind": "agent_identity",
+      "sha256": "b59f49101c65c1cfb6a19db5fb36b7cc604530374adb87b6bd2924ee0cedb551",
+      "bytes": 6696
+    },
+    {
+      "path": ".agentify/agents/specialists/specialist-output-streams-file-wrappers-and-utility-i-o-contract.json",
+      "kind": "agent_identity",
+      "sha256": "0336b25bf4ce13fb213241c6a9d615b011fd83849ded69b453cde27cf6588b12",
+      "bytes": 6849
+    },
+    {
+      "path": ".agentify/agents/specialists/specialist-paramtype-conversion-contract.json",
+      "kind": "agent_identity",
+      "sha256": "63f64aaa7be5bd51d90205a8c029b71084f5c1a5c45cc1a6fdae4fce88dee9f1",
+      "bytes": 5457
+    },
+    {
+      "path": ".agentify/agents/specialists/specialist-terminal-ui-process-and-stream-lifecycle.json",
+      "kind": "agent_identity",
+      "sha256": "42acd15afae25538c4a44058f8e29a0961bbf0034a3982bcf0f8eed1aae8c0b6",
+      "bytes": 4913
+    },
+    {
+      "path": ".agentify/history/agents/builder/000000000001.json",
+      "kind": "history_event",
+      "sha256": "bcfb8e12cb3f122ef0afff6aafaca61adeb47f5f74f48678bd889f862e2b9b8b",
+      "bytes": 1773
+    },
+    {
+      "path": ".agentify/history/agents/knowledge-maintainer/000000000001.json",
+      "kind": "history_event",
+      "sha256": "0e8cb1e7fc8ebe760b1a4cf0fcbcf7b84a9204f4b9897bad4e6d68d876daab02",
+      "bytes": 1848
+    },
+    {
+      "path": ".agentify/history/agents/orchestrator/000000000001.json",
+      "kind": "history_event",
+      "sha256": "a2d7eb2521605fea7561a60471fd802f34f5fc941dff8d023302fec7546864b6",
+      "bytes": 1813
+    },
+    {
+      "path": ".agentify/history/agents/reviewer/000000000001.json",
+      "kind": "history_event",
+      "sha256": "317c446ba9dc6f73f34fac8e9a07ef215bb23d2855045b650ffed2ae93b9359e",
+      "bytes": 1780
+    },
+    {
+      "path": ".agentify/history/agents/specialist-clirunner-isolation-and-terminal-stream-lifecycle/000000000001.json",
+      "kind": "history_event",
+      "sha256": "48c8b8541fbafb40ced07f915e296352007a37eced9e2534bc4ddcbe6f376c8b",
+      "bytes": 4479
+    },
+    {
+      "path": ".agentify/history/agents/specialist-command-invocation-and-context-lifecycle/000000000001.json",
+      "kind": "history_event",
+      "sha256": "d53371ac7bda7e029db2c113e2a6ac538d848ff1460dbba30ea1064ca60aea45",
+      "bytes": 7554
+    },
+    {
+      "path": ".agentify/history/agents/specialist-output-streams-file-wrappers-and-utility-i-o-contract/000000000001.json",
+      "kind": "history_event",
+      "sha256": "212c63daec0dc919696ef312d0ac3c2c3a56dbc86bcd799e41164bfd543fcf8a",
+      "bytes": 7720
+    },
+    {
+      "path": ".agentify/history/agents/specialist-paramtype-conversion-contract/000000000001.json",
+      "kind": "history_event",
+      "sha256": "7162c29504509fc0f301e66ffaa3a6872f75030b24d883e3e3ed2e31f561d797",
+      "bytes": 6252
+    },
+    {
+      "path": ".agentify/history/agents/specialist-terminal-ui-process-and-stream-lifecycle/000000000001.json",
+      "kind": "history_event",
+      "sha256": "46a973399811195767fe033d0580d3a7188e0adba6571320987a08e839abd64a",
+      "bytes": 5693
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-1234732a299f789c9c47f670686a4b8f.json",
+      "kind": "candidate_decision",
+      "sha256": "f0e4dac4372e9ed46c45d8cdf0effd5dc864d7c0bdc54b315790d34ee4f5d8c1",
+      "bytes": 9476
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-1f25d43a73b9e23a811fd206436d5e8e.json",
+      "kind": "candidate_decision",
+      "sha256": "163bab38f592ce1576af76c556435aaca7cc003c8348b08fc00eee64fb1680cf",
+      "bytes": 5207
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-4d4a95b07f19a4d45715951a2085b935.json",
+      "kind": "candidate_decision",
+      "sha256": "dbc4ff4bbb2fd47f987a7fba51e1d79217c365656b250f94a2ad7eae0e7de4a9",
+      "bytes": 11712
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-6f6c1d38fd8da5f9d6b3d7b5f12e10f9.json",
+      "kind": "candidate_decision",
+      "sha256": "82c853a9cac577361d38daa9314019bceb14773b2326fa0a8e11cc507966abc6",
+      "bytes": 12143
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-916a99cd134978182c9ed35b320d9a70.json",
+      "kind": "candidate_decision",
+      "sha256": "34344a63fd2f6ecb6d636969dc855e814bd5b0f967118cdba8cea015b5740481",
+      "bytes": 10138
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-97b5c50856182c9aad9cab24bc6b3fb0.json",
+      "kind": "candidate_decision",
+      "sha256": "8d3f99f2ecede05db853a6a95e814228c0178ad32318f509e4bb89725e75f27f",
+      "bytes": 12951
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-be2c9e62453dc00f98c4a2df527d8381.json",
+      "kind": "candidate_decision",
+      "sha256": "dcc77700e2e95f3c2b8e73e171eb03bb2c7a61316c745e413ee9fc7616d423dc",
+      "bytes": 17361
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-d08eb680db5b62f1fcb8c1ad238d8a98.json",
+      "kind": "candidate_decision",
+      "sha256": "666cd423d04007af57bea51d316117430deb52f39f5af1578e1d247fe51a52d3",
+      "bytes": 15490
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-d84f9e5864a7c123be4380e8898a36bf.json",
+      "kind": "candidate_decision",
+      "sha256": "e36bfd339c03171b2f065a7313fecbfd312defc4501971bf32ada8c6c8ab8622",
+      "bytes": 19023
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-dfc4b636cd9bc9173ef5d439b6798db1.json",
+      "kind": "candidate_decision",
+      "sha256": "4fa10597aa411288a71e2d70699e32e609ab964e485ffdf1697b72af7256096f",
+      "bytes": 19027
+    },
+    {
+      "path": ".agentify/history/candidates/candidate-f3c64c4cb1424fa715b3dd786b0ab46e.json",
+      "kind": "candidate_decision",
+      "sha256": "55a7f7fe2afeb2e50c6fe1a4fce8295e0ba49aed217311f2bb1726dc42335cb2",
+      "bytes": 8308
+    },
+    {
+      "path": ".agentify/history/candidates/installer-self-update-policy-v1.json",
+      "kind": "candidate_decision",
+      "sha256": "5ee9979eec4781334a8d10ef2e0294ac334eea20ecc4f86bee7e583d86de3351",
+      "bytes": 3162
+    },
+    {
+      "path": ".agentify/history/memory/procedure-validate-clirunner-isolation-and-terminal-stream-lifecycle-200ead66bf23e23f/000000000001.json",
+      "kind": "history_event",
+      "sha256": "0e179267451223fb4a6a906bb0f4152367eada582bdf52fe33572cd9b8b184f0",
+      "bytes": 8382
+    },
+    {
+      "path": ".agentify/history/memory/procedure-validate-command-invocation-and-context-lifecycle-e95e961b6e2f7266/000000000001.json",
+      "kind": "history_event",
+      "sha256": "ec5ead37830b7401c44f67375d1c164d1a852a1b5d1e525a1a2a231150ab86e0",
+      "bytes": 11795
+    },
+    {
+      "path": ".agentify/history/memory/procedure-validate-output-streams-file-wrappers-and-utility-i-o-contract-92357d48cb0b9b48/000000000001.json",
+      "kind": "history_event",
+      "sha256": "705c840ce0b524413d99c4a53c5defffc7d01dc6592152bdf4ef1997effb2d18",
+      "bytes": 12213
+    },
+    {
+      "path": ".agentify/history/memory/procedure-validate-paramtype-conversion-contract-4099488674470cbd/000000000001.json",
+      "kind": "history_event",
+      "sha256": "9cc9acd20ecddc6b380eef3d81cedce0367876f4386f5658b4ddb7000a75da8a",
+      "bytes": 10232
+    },
+    {
+      "path": ".agentify/history/memory/procedure-validate-repository-change-d381eada60128c80/000000000001.json",
+      "kind": "history_event",
+      "sha256": "e7cbb105c83869d53666c0bad0bd0467808e5f7356eb25f29a312ff20deca731",
+      "bytes": 5313
+    },
+    {
+      "path": ".agentify/history/memory/procedure-validate-terminal-ui-process-and-stream-lifecycle-86462220df26eaa0/000000000001.json",
+      "kind": "history_event",
+      "sha256": "82d6ef82d3d2f87aa8304dd4d8fea9a6bf761137334f5fd0948344a2f3d2adda",
+      "bytes": 9559
+    },
+    {
+      "path": ".agentify/history/memory/self-update-allowlist/000000000001.json",
+      "kind": "history_event",
+      "sha256": "0f6f0de333c757477cda50659173bdb14ca175050368ee0fe3feb1829c4d6aca",
+      "bytes": 3303
+    },
+    {
+      "path": ".agentify/history/memory/specialist-profile-specialist-clirunner-isolation-and-terminal-stream-lifecycle-ff70ed3257b4c084/000000000001.json",
+      "kind": "history_event",
+      "sha256": "76476323b94b6ebfbfc9a46cf5d235572209ed78aaeca544de522019def33fd5",
+      "bytes": 13014
+    },
+    {
+      "path": ".agentify/history/memory/specialist-profile-specialist-command-invocation-and-context-lifecycle-3be09f9ce0c02f34/000000000001.json",
+      "kind": "history_event",
+      "sha256": "4ddb922033151a4b77563336d5c491710ef6007c1a3635c5e74b6cd0f208d765",
+      "bytes": 19099
+    },
+    {
+      "path": ".agentify/history/memory/specialist-profile-specialist-output-streams-file-wrappers-and-utility-i-o-contract-40dcfa33200c3c84/000000000001.json",
+      "kind": "history_event",
+      "sha256": "9d13621be876e91ab73a5285221e88f42677002d32074ffe4afc2dd98ebd34fc",
+      "bytes": 19082
+    },
+    {
+      "path": ".agentify/history/memory/specialist-profile-specialist-paramtype-conversion-contract-ae2089f0c4bf2dd6/000000000001.json",
+      "kind": "history_event",
+      "sha256": "09348b251f287f5f461fc3aa09fc8ab6c6ad2b6a8be786a7a26b3ef527f7f43d",
+      "bytes": 17444
+    },
+    {
+      "path": ".agentify/history/memory/specialist-profile-specialist-terminal-ui-process-and-stream-lifecycle-bfe31a635dc2c755/000000000001.json",
+      "kind": "history_event",
+      "sha256": "5cb664f414c1f2f1037e754bab16ab4f4f0841970eacb5d5e3d7149591c12177",
+      "bytes": 15562
+    },
+    {
+      "path": ".agentify/knowledge/procedures/procedure-validate-clirunner-isolation-and-terminal-stream-lifecycle-200ead66bf23e23f.json",
+      "kind": "memory_record",
+      "sha256": "49378cd3a2d717263fe750615e3df6b4c8f56f149ad33187361d5765307366b7",
+      "bytes": 7411
+    },
+    {
+      "path": ".agentify/knowledge/procedures/procedure-validate-command-invocation-and-context-lifecycle-e95e961b6e2f7266.json",
+      "kind": "memory_record",
+      "sha256": "3b75c8dbe0b09d193387cbba6c780d454125bbe3e79653f3cd3cbfa7db39e33c",
+      "bytes": 10681
+    },
+    {
+      "path": ".agentify/knowledge/procedures/procedure-validate-output-streams-file-wrappers-and-utility-i-o-contract-92357d48cb0b9b48.json",
+      "kind": "memory_record",
+      "sha256": "38091673090b9a41496d094726b8db3101a6cc8ace905ad1599ef5fddbd4f50b",
+      "bytes": 11086
+    },
+    {
+      "path": ".agentify/knowledge/procedures/procedure-validate-paramtype-conversion-contract-4099488674470cbd.json",
+      "kind": "memory_record",
+      "sha256": "35f45c96410d2266566c7848b302fb712bc490050d11160bd8397b9db8af88e9",
+      "bytes": 9189
+    },
+    {
+      "path": ".agentify/knowledge/procedures/procedure-validate-repository-change-d381eada60128c80.json",
+      "kind": "memory_record",
+      "sha256": "3375162fe8a42455beb8fbaeffe5b28fca6814b41f254924ef992e68300de2b5",
+      "bytes": 4494
+    },
+    {
+      "path": ".agentify/knowledge/procedures/procedure-validate-terminal-ui-process-and-stream-lifecycle-86462220df26eaa0.json",
+      "kind": "memory_record",
+      "sha256": "964f3ba7841026207f32c309d1a17b8cf2775213d49d46c97c384054b76391c3",
+      "bytes": 8541
+    },
+    {
+      "path": ".agentify/knowledge/specialists/specialist-profile-specialist-clirunner-isolation-and-terminal-stream-lifecycle-ff70ed3257b4c084.json",
+      "kind": "memory_record",
+      "sha256": "c7acef612054dc45209471cd41b3271ab785b6fd81b8b60a89c48fa5865898f8",
+      "bytes": 11777
+    },
+    {
+      "path": ".agentify/knowledge/specialists/specialist-profile-specialist-command-invocation-and-context-lifecycle-3be09f9ce0c02f34.json",
+      "kind": "memory_record",
+      "sha256": "8c4c097f8d97b661964725a6f3318a80b9b6775e3fd4fbca7c858c25bfe41d56",
+      "bytes": 17609
+    },
+    {
+      "path": ".agentify/knowledge/specialists/specialist-profile-specialist-output-streams-file-wrappers-and-utility-i-o-contract-40dcfa33200c3c84.json",
+      "kind": "memory_record",
+      "sha256": "1a740aca725208b06e483093c0ba53010a8f8d205128ce83b980fafbc0b40abe",
+      "bytes": 17587
+    },
+    {
+      "path": ".agentify/knowledge/specialists/specialist-profile-specialist-paramtype-conversion-contract-ae2089f0c4bf2dd6.json",
+      "kind": "memory_record",
+      "sha256": "6f8b95ac89302882ca754f1948de3ab03a086890bdfdfb7f949906de8e62b668",
+      "bytes": 16007
+    },
+    {
+      "path": ".agentify/knowledge/specialists/specialist-profile-specialist-terminal-ui-process-and-stream-lifecycle-bfe31a635dc2c755.json",
+      "kind": "memory_record",
+      "sha256": "d5158a82671401c2b5a4c7cf93b7ade10dcfdf6e26d2b7ff052cf7c0bfddc7ea",
+      "bytes": 14214
+    },
+    {
+      "path": ".agentify/policies/self-update-allowlist.json",
+      "kind": "memory_record",
+      "sha256": "a4b39535ce6456d8003cd3ac5400c041711b3ce4894a330efca39268ddd5bbce",
+      "bytes": 2614
+    }
+  ],
+  "root_digest": "46b97085ba5ea4e6ed70b8527cbca502faa87f443c85b2829b52a21e7b9d0ee4"
+}

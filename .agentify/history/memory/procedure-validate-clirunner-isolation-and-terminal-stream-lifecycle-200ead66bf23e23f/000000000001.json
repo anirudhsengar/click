@@ -1,0 +1,181 @@
+{
+  "schema_version": "1",
+  "event_type": "entity_mutation",
+  "entity_type": "memory_record",
+  "entity_id": "procedure-validate-clirunner-isolation-and-terminal-stream-lifecycle-200ead66bf23e23f",
+  "revision": 1,
+  "operation": "accept",
+  "actor": "knowledge-maintainer",
+  "reason": "accept procedure portfolio 71a55dc2b5ff6dcacb015e942f0284c881483412467f5d6fac2d44f99b55940e",
+  "occurred_at": "2026-08-26T06:07:41.428Z",
+  "before_digest": null,
+  "after_digest": "17a9fd786fec9d2e17c38b814f8b43bbccdff0eb370217f72d9bf05ba8c744ca",
+  "after": {
+    "schema_version": "1",
+    "memory_id": "procedure-validate-clirunner-isolation-and-terminal-stream-lifecycle-200ead66bf23e23f",
+    "revision": 1,
+    "kind": "procedure",
+    "owning_agent_id": "specialist-clirunner-isolation-and-terminal-stream-lifecycle",
+    "statement": "Run the authoritative validation surface for CliRunner isolation and terminal stream lifecycle changes.",
+    "source_type": "validated_bootstrap",
+    "supporting_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+    "evidence": [
+      {
+        "evidence_id": "evidence-10931cce19369a40dbae9a49",
+        "source_type": "validated_bootstrap",
+        "repository_path": "CHANGES.md",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "73ddb9996dfc8c9dcf9367a4839ffc5b06ac2f8ce552bba5e3269cc3a2239c0e",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: CHANGES.md",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-5fd2381b9474e2ca367279a0",
+        "source_type": "validated_bootstrap",
+        "repository_path": "tests/test_stream_lifecycle.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "a2471fbd9c222213380aef823a537521c8dcc8224709814708149217fc932524",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_stream_lifecycle.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-b7548ff88713c2f9af990766",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/testing.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "76f4e649bc53000d667c8c0deff1591970fa034b0f085a207165839b2301019a",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/testing.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-cfff81126f10ae3c286fc8d1",
+        "source_type": "validated_bootstrap",
+        "repository_path": "tests/test_testing.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "4af5187e3f6eb22e2d4cd3f9edffe5d162103043e4e0d33a5734e74edebaba1c",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_testing.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-e4c01ad13f8ac75af410feeb",
+        "source_type": "validated_bootstrap",
+        "repository_path": "docs/testing.md",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "61c905c17ecacd1661478b018d4b4607bedcecd22a340c7a61cf0f684abd33bb",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: docs/testing.md",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      }
+    ],
+    "confidence": "high",
+    "freshness": "current",
+    "dependent_paths": [
+      "CHANGES.md",
+      "docs/testing.md",
+      "src/click/testing.py",
+      "tests/test_stream_lifecycle.py",
+      "tests/test_testing.py"
+    ],
+    "invalidation_conditions": [
+      "Revalidate when a required context path or authoritative validation command changes."
+    ],
+    "superseded_by": null,
+    "contradicts": [],
+    "human_attribution": null,
+    "tags": [
+      "procedure",
+      "procedure-validate-clirunner-isolation-and-terminal-stream-lifecycle"
+    ],
+    "accepted_candidate_ids": [
+      "candidate-f3c64c4cb1424fa715b3dd786b0ab46e"
+    ],
+    "created_at": "2026-08-26T06:07:41.428Z",
+    "updated_at": "2026-08-26T06:07:41.428Z",
+    "semantic_digest": "64853689b6373173bbb1affd29f897758650026614b5df15caaf24bdc0f32741",
+    "payload": {
+      "name": "validate-clirunner-isolation-and-terminal-stream-lifecycle",
+      "trigger_conditions": [
+        "CliRunner isolation and terminal stream lifecycle change",
+        "Does command output bypass sys streams?",
+        "Is the platform Windows where fd capture is unavailable?",
+        "Should assertions use bytes or decoded merged output?",
+        "Will invocation be concurrent or nested?"
+      ],
+      "required_context_paths": [
+        "CHANGES.md",
+        "docs/testing.md",
+        "src/click/testing.py",
+        "tests/test_stream_lifecycle.py",
+        "tests/test_testing.py"
+      ],
+      "allowed_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "pytest tests/test_deprecations.py -k isolated_filesystem",
+        "pytest tests/test_stream_lifecycle.py -m stress",
+        "pytest tests/test_stream_lifecycle.py -v",
+        "pytest tests/test_testing.py",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ],
+      "expected_file_patterns": [
+        "CHANGES.md",
+        "docs/testing.md",
+        "src/click/testing.py",
+        "tests/test_stream_lifecycle.py",
+        "tests/test_testing.py"
+      ],
+      "side_effects": [
+        "May create repository-local test, build, or coverage artifacts."
+      ],
+      "validation_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "pytest tests/test_deprecations.py -k isolated_filesystem",
+        "pytest tests/test_stream_lifecycle.py -m stress",
+        "pytest tests/test_stream_lifecycle.py -v",
+        "pytest tests/test_testing.py",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ],
+      "recovery_steps": [
+        "Stop after the first deterministic failure and preserve its output.",
+        "Repair the root cause without weakening validation or repository policy.",
+        "Rerun the focused command, then the complete required validation set."
+      ]
+    },
+    "content_digest": "17a9fd786fec9d2e17c38b814f8b43bbccdff0eb370217f72d9bf05ba8c744ca"
+  },
+  "event_digest": "4d2b17a6ef4f0857617308e0acc413854c8fb8f737bdbe30e104127c1d8033f2"
+}

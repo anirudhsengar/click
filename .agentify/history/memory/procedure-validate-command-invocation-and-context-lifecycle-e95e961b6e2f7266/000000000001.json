@@ -1,0 +1,257 @@
+{
+  "schema_version": "1",
+  "event_type": "entity_mutation",
+  "entity_type": "memory_record",
+  "entity_id": "procedure-validate-command-invocation-and-context-lifecycle-e95e961b6e2f7266",
+  "revision": 1,
+  "operation": "accept",
+  "actor": "knowledge-maintainer",
+  "reason": "accept procedure portfolio 71a55dc2b5ff6dcacb015e942f0284c881483412467f5d6fac2d44f99b55940e",
+  "occurred_at": "2026-08-26T06:07:41.627Z",
+  "before_digest": null,
+  "after_digest": "ac03bafe307bf1755963bb88af95e487ecacffcd20ece5dff750323811c467ff",
+  "after": {
+    "schema_version": "1",
+    "memory_id": "procedure-validate-command-invocation-and-context-lifecycle-e95e961b6e2f7266",
+    "revision": 1,
+    "kind": "procedure",
+    "owning_agent_id": "specialist-command-invocation-and-context-lifecycle",
+    "statement": "Run the authoritative validation surface for Command invocation and Context lifecycle changes.",
+    "source_type": "validated_bootstrap",
+    "supporting_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+    "evidence": [
+      {
+        "evidence_id": "evidence-012b74608f1d82b96853539a",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/exceptions.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/exceptions.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-10931cce19369a40dbae9a49",
+        "source_type": "validated_bootstrap",
+        "repository_path": "CHANGES.md",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "73ddb9996dfc8c9dcf9367a4839ffc5b06ac2f8ce552bba5e3269cc3a2239c0e",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: CHANGES.md",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-1b004da80ca4ff8da656cc35",
+        "source_type": "validated_bootstrap",
+        "repository_path": "tests/test_basic.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "af3e91d16bebb42750737f297da9825dce6ecc516db9295b3b0c6d6d62a1337d",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_basic.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-2b5b081927004124b79143ff",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/utils.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/utils.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-b517841a8f32c146e181c6d9",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/decorators.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "16069357615691fcdfc9c794bb515f6009eb35aad6f7a76c017bdce06dae8d55",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/decorators.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-bb53a326669cb262d1fec6e3",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/_utils.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "782642b7026db180f941892435627c318ffc001223cbc31cce030cc95637dab4",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/_utils.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-d823357d734a339b78ccab08",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/core.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "4c65a613c1c407dce907a4e123b12cec5fe0f62088a8b9f86fabd4b60c4b6d78",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/core.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-db23080449167e8e02cf4ad6",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/globals.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "80cf8d87a0383341c1fd2824685e4ce2770618c0c773f7e51d7bbdfe88781845",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/globals.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-deecdfcbe1f32ee6a5621b54",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/parser.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "a09f9f53fde6bf1ba022e36d1da0804d9e7a9601261d18208c9892a84818ae30",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/parser.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-e7836edc46a0784aacbfbf82",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/__init__.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "5abfc54d37d47cc788b7e7a05e9514787f8c5a0b7db429d0f24d748ac89964ca",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/__init__.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      }
+    ],
+    "confidence": "high",
+    "freshness": "current",
+    "dependent_paths": [
+      "CHANGES.md",
+      "src/click/__init__.py",
+      "src/click/_utils.py",
+      "src/click/core.py",
+      "src/click/decorators.py",
+      "src/click/exceptions.py",
+      "src/click/globals.py",
+      "src/click/parser.py",
+      "src/click/utils.py",
+      "tests/test_basic.py"
+    ],
+    "invalidation_conditions": [
+      "Revalidate when a required context path or authoritative validation command changes."
+    ],
+    "superseded_by": null,
+    "contradicts": [],
+    "human_attribution": null,
+    "tags": [
+      "procedure",
+      "procedure-validate-command-invocation-and-context-lifecycle"
+    ],
+    "accepted_candidate_ids": [
+      "candidate-4d4a95b07f19a4d45715951a2085b935"
+    ],
+    "created_at": "2026-08-26T06:07:41.627Z",
+    "updated_at": "2026-08-26T06:07:41.627Z",
+    "semantic_digest": "1101c6d68cbfe8c77db95a3d8226709d197946f03cd3c5b4d62dd873cd8f14d3",
+    "payload": {
+      "name": "validate-command-invocation-and-context-lifecycle",
+      "trigger_conditions": [
+        "Command invocation and Context lifecycle change",
+        "Could a custom Context subclass fail to propagate to subcontexts?",
+        "Does it change ParameterSource precedence, callback order, or resilient parsing?",
+        "Does the change affect Group chain mode, invoke_without_command, or result callbacks?",
+        "Is this path standalone CLI execution or embedded/test invocation?"
+      ],
+      "required_context_paths": [
+        "CHANGES.md",
+        "src/click/__init__.py",
+        "src/click/_utils.py",
+        "src/click/core.py",
+        "src/click/decorators.py",
+        "src/click/exceptions.py",
+        "src/click/globals.py",
+        "src/click/parser.py",
+        "src/click/utils.py",
+        "tests/test_basic.py"
+      ],
+      "allowed_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "pytest tests/test_basic.py tests/test_commands.py tests/test_context.py",
+        "pytest tests/test_options.py",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ],
+      "expected_file_patterns": [
+        "CHANGES.md",
+        "src/click/__init__.py",
+        "src/click/_utils.py",
+        "src/click/core.py",
+        "src/click/decorators.py",
+        "src/click/exceptions.py",
+        "src/click/globals.py",
+        "src/click/parser.py",
+        "src/click/utils.py",
+        "tests/test_basic.py"
+      ],
+      "side_effects": [
+        "May create repository-local test, build, or coverage artifacts."
+      ],
+      "validation_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "pytest tests/test_basic.py tests/test_commands.py tests/test_context.py",
+        "pytest tests/test_options.py",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ],
+      "recovery_steps": [
+        "Stop after the first deterministic failure and preserve its output.",
+        "Repair the root cause without weakening validation or repository policy.",
+        "Rerun the focused command, then the complete required validation set."
+      ]
+    },
+    "content_digest": "ac03bafe307bf1755963bb88af95e487ecacffcd20ece5dff750323811c467ff"
+  },
+  "event_digest": "460eb5ca17e314da8da3d5270310be5f594fd1cf3d8c3bf7dacb88ff7c357e60"
+}

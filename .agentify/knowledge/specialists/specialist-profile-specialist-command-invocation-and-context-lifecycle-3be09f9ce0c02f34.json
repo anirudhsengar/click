@@ -1,0 +1,425 @@
+{
+  "schema_version": "1",
+  "memory_id": "specialist-profile-specialist-command-invocation-and-context-lifecycle-3be09f9ce0c02f34",
+  "revision": 1,
+  "kind": "specialist",
+  "owning_agent_id": "specialist-command-invocation-and-context-lifecycle",
+  "statement": "Owns the end-to-end contract from decorated command construction through argv parsing, Context management, callback dispatch, help, and standalone exit translation.",
+  "source_type": "validated_bootstrap",
+  "supporting_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+  "evidence": [
+    {
+      "evidence_id": "evidence-012b74608f1d82b96853539a",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/exceptions.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/exceptions.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-10931cce19369a40dbae9a49",
+      "source_type": "validated_bootstrap",
+      "repository_path": "CHANGES.md",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "73ddb9996dfc8c9dcf9367a4839ffc5b06ac2f8ce552bba5e3269cc3a2239c0e",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: CHANGES.md",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-1b004da80ca4ff8da656cc35",
+      "source_type": "validated_bootstrap",
+      "repository_path": "tests/test_basic.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "af3e91d16bebb42750737f297da9825dce6ecc516db9295b3b0c6d6d62a1337d",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: tests/test_basic.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-2b5b081927004124b79143ff",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/utils.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/utils.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-b517841a8f32c146e181c6d9",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/decorators.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "16069357615691fcdfc9c794bb515f6009eb35aad6f7a76c017bdce06dae8d55",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/decorators.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-bb53a326669cb262d1fec6e3",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/_utils.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "782642b7026db180f941892435627c318ffc001223cbc31cce030cc95637dab4",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/_utils.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-d823357d734a339b78ccab08",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/core.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "4c65a613c1c407dce907a4e123b12cec5fe0f62088a8b9f86fabd4b60c4b6d78",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/core.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-db23080449167e8e02cf4ad6",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/globals.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "80cf8d87a0383341c1fd2824685e4ce2770618c0c773f7e51d7bbdfe88781845",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/globals.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-deecdfcbe1f32ee6a5621b54",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/parser.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "a09f9f53fde6bf1ba022e36d1da0804d9e7a9601261d18208c9892a84818ae30",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/parser.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    },
+    {
+      "evidence_id": "evidence-e7836edc46a0784aacbfbf82",
+      "source_type": "validated_bootstrap",
+      "repository_path": "src/click/__init__.py",
+      "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+      "sha256": "5abfc54d37d47cc788b7e7a05e9514787f8c5a0b7db429d0f24d748ac89964ca",
+      "line_start": null,
+      "line_end": null,
+      "external_ref": null,
+      "description": "Tracked repository evidence for specialist and procedure discovery: src/click/__init__.py",
+      "observed_at": "2026-08-25T01:48:48.000Z",
+      "actor": "agentify-specialist-discovery"
+    }
+  ],
+  "confidence": "high",
+  "freshness": "current",
+  "dependent_paths": [
+    "CHANGES.md",
+    "src/click/__init__.py",
+    "src/click/_utils.py",
+    "src/click/core.py",
+    "src/click/decorators.py",
+    "src/click/exceptions.py",
+    "src/click/globals.py",
+    "src/click/parser.py",
+    "src/click/utils.py",
+    "tests/test_basic.py"
+  ],
+  "invalidation_conditions": [
+    "Revalidate when any specialist freshness dependency changes or disappears."
+  ],
+  "superseded_by": null,
+  "contradicts": [],
+  "human_attribution": null,
+  "tags": [
+    "concern-command-invocation-and-context-lifecycle",
+    "specialist-profile"
+  ],
+  "accepted_candidate_ids": [
+    "candidate-dfc4b636cd9bc9173ef5d439b6798db1"
+  ],
+  "created_at": "2026-08-26T06:07:40.313Z",
+  "updated_at": "2026-08-26T06:07:40.313Z",
+  "semantic_digest": "88dbd886f9ccd8e8d6d811c6328d4e9dbb61648c91fb2dcfaa2d2889c7c49e67",
+  "payload": {
+    "specialist_id": "specialist-command-invocation-and-context-lifecycle",
+    "concern": "Command invocation and Context lifecycle",
+    "one_line": "Owns the end-to-end contract from decorated command construction through argv parsing, Context management, callback dispatch, help, and standalone exit translation.",
+    "covers": "The public package command API, Command, Group, Context, Parameter processing order and source arbitration, parser integration, sentinel handling, current-context stack, ClickException handling, help option installation, and callback/subcommand dispatch.",
+    "excludes": "Concrete per-parameter conversion rules, shell completion provider internals, terminal I/O, and CliRunner capture mechanics.",
+    "flows": [
+      {
+        "name": "decorator to command execution",
+        "description": "The public package surface exposes command types, decorators construct a command, core creates invocation state, the parser consumes argv using shared sentinels, and command errors are rendered or translated at the standalone boundary.",
+        "steps": [
+          {
+            "path": "src/click/__init__.py",
+            "what_happens": "The public package initializer re-exports Command, Group, Context, Parameter, decorators, and Click's public exception classes."
+          },
+          {
+            "path": "src/click/decorators.py",
+            "what_happens": "command/group factories instantiate Command or Group and attach the callback and deferred parameters."
+          },
+          {
+            "path": "src/click/core.py",
+            "what_happens": "Command.main creates a Context, installs parameters, parses arguments, invokes callbacks or subcommands, and handles standalone exits."
+          },
+          {
+            "path": "src/click/parser.py",
+            "what_happens": "The option parser resolves options and positional arguments into values, leftovers, and parameter order."
+          },
+          {
+            "path": "src/click/_utils.py",
+            "what_happens": "UNSET and FLAG_NEEDS_VALUE distinguish absent values and flag-like options while core and parser coordinate parameter handling."
+          },
+          {
+            "path": "src/click/globals.py",
+            "what_happens": "push_context/pop_context maintain the active thread-local Context stack during nested invocation."
+          },
+          {
+            "path": "src/click/exceptions.py",
+            "what_happens": "ClickException, UsageError, and related subclasses render usage failures or carry exit codes back through main."
+          }
+        ]
+      }
+    ],
+    "touchpoints": [
+      {
+        "path": "CHANGES.md",
+        "symbol": "8.5.0 command changes",
+        "role": "Release record for reserved help storage and feature-switch behavior in command invocation.",
+        "line_range": [
+          39,
+          58
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "src/click/__init__.py",
+        "symbol": "public re-exports and __getattr__",
+        "role": "Public package entry point for command, context, parameter, utility, terminal, and exception APIs.",
+        "line_range": [
+          8,
+          145
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "src/click/_utils.py",
+        "symbol": "UNSET/FLAG_NEEDS_VALUE",
+        "role": "Shared sentinel contract for absent and flag-like parameter values.",
+        "line_range": [
+          6,
+          35
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "src/click/core.py",
+        "symbol": "Command.main",
+        "role": "Top-level parse/invoke/exception-to-exit boundary.",
+        "line_range": [
+          1360,
+          1475
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "src/click/core.py",
+        "symbol": "Context",
+        "role": "Owns invocation state, nesting depth, cleanup, and callback invocation.",
+        "line_range": [
+          243,
+          935
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "src/click/core.py",
+        "symbol": "Group.invoke",
+        "role": "Resolves and dispatches subcommands and chain results.",
+        "line_range": [
+          1790,
+          2050
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "src/click/core.py",
+        "symbol": "Parameter.handle_parse_result",
+        "role": "Writes ctx.params and arbitrates parameter sources.",
+        "line_range": [
+          2740,
+          2820
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "src/click/decorators.py",
+        "symbol": "command/group",
+        "role": "Public construction surface for Command and Group.",
+        "line_range": [
+          120,
+          240
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "src/click/exceptions.py",
+        "symbol": "ClickException/UsageError",
+        "role": "Structured invocation failures and standalone exit rendering.",
+        "line_range": [
+          29,
+          150
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "src/click/globals.py",
+        "symbol": "push_context/pop_context/get_current_context",
+        "role": "Current-context stack used by callbacks and errors.",
+        "line_range": [
+          1,
+          80
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "src/click/parser.py",
+        "symbol": "_OptionParser.parse_args",
+        "role": "Converts argv into option values, positional values, leftovers, and processing order.",
+        "line_range": [
+          213,
+          535
+        ],
+        "centrality": "core"
+      },
+      {
+        "path": "src/click/utils.py",
+        "symbol": "_detect_program_name/_expand_args/_make_default_short_help",
+        "role": "Shared command-name, argv expansion, help-shortening, and echo helpers consumed by core.",
+        "line_range": [
+          40,
+          90
+        ],
+        "centrality": "supporting"
+      },
+      {
+        "path": "tests/test_basic.py",
+        "symbol": "basic command and group tests",
+        "role": "End-to-end regression coverage for help, invocation, groups, returns, and option behavior.",
+        "line_range": [
+          8,
+          155
+        ],
+        "centrality": "supporting"
+      }
+    ],
+    "invariants": [
+      {
+        "rule": "Context cleanup waits for the outermost context exit.",
+        "why": "Nested subcommands must not tear down parent resources during dispatch.",
+        "reference": "src/click/core.py"
+      },
+      {
+        "rule": "More explicit ParameterSource values win when multiple parameters share a storage name.",
+        "why": "Feature-switch and eager parameter groups depend on deterministic source arbitration.",
+        "reference": "src/click/core.py"
+      },
+      {
+        "rule": "Command.main is the sole standalone-mode boundary translating ClickException into process exit.",
+        "why": "Embedded callers and tests rely on standalone_mode=False to receive exceptions and return values.",
+        "reference": "src/click/core.py"
+      },
+      {
+        "rule": "The default help option uses reserved storage name _click_default_help.",
+        "why": "User parameters named help must not collide with the lazy help option.",
+        "reference": "src/click/core.py"
+      }
+    ],
+    "pitfalls": [
+      {
+        "risk": "Changing parameter evaluation order or source arbitration.",
+        "consequence": "User callbacks and feature-switch groups can observe different values or side effects.",
+        "reference": "src/click/core.py"
+      },
+      {
+        "risk": "Using chain mode with unsupported optional arguments or relying on group return values in chain mode.",
+        "consequence": "Construction or result processing raises or discards values instead of invoking the intended callback contract.",
+        "reference": "src/click/core.py"
+      },
+      {
+        "risk": "Forgetting resilient_parsing for completion/help scraping paths.",
+        "consequence": "No-argument help behavior can become an error during shell completion.",
+        "reference": "src/click/core.py"
+      }
+    ],
+    "entry_questions": [
+      "Could a custom Context subclass fail to propagate to subcontexts?",
+      "Does it change ParameterSource precedence, callback order, or resilient parsing?",
+      "Does the change affect Group chain mode, invoke_without_command, or result callbacks?",
+      "Is this path standalone CLI execution or embedded/test invocation?"
+    ],
+    "context_paths": [
+      "CHANGES.md",
+      "src/click/__init__.py",
+      "src/click/_utils.py",
+      "src/click/core.py",
+      "src/click/decorators.py",
+      "src/click/exceptions.py",
+      "src/click/globals.py",
+      "src/click/parser.py",
+      "src/click/utils.py",
+      "tests/test_basic.py"
+    ],
+    "related_specialists": [
+      "specialist-clirunner-isolation-and-terminal-stream-lifecycle",
+      "specialist-output-streams-file-wrappers-and-utility-i-o-contract",
+      "specialist-paramtype-conversion-contract",
+      "specialist-terminal-ui-process-and-stream-lifecycle"
+    ],
+    "validation_commands": [
+      "add a regression test under tests/",
+      "add unit tests under tests/",
+      "pytest tests/test_basic.py tests/test_commands.py tests/test_context.py",
+      "pytest tests/test_options.py",
+      "uv build",
+      "uv lock if dependencies changed",
+      "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+      "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+      "uv run --locked --no-default-groups --group dev tox run -e typing",
+      "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+      "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+      "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+    ]
+  },
+  "content_digest": "29c3910b6362f3cb8e963870846b44e903e171ded770d3ee90d1e65e312d21d6"
+}

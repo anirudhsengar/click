@@ -1,0 +1,418 @@
+{
+  "schema_version": "1",
+  "event_type": "entity_mutation",
+  "entity_type": "memory_record",
+  "entity_id": "specialist-profile-specialist-paramtype-conversion-contract-ae2089f0c4bf2dd6",
+  "revision": 1,
+  "operation": "accept",
+  "actor": "knowledge-maintainer",
+  "reason": "accept specialist portfolio 71a55dc2b5ff6dcacb015e942f0284c881483412467f5d6fac2d44f99b55940e",
+  "occurred_at": "2026-08-26T06:07:40.992Z",
+  "before_digest": null,
+  "after_digest": "e86112814a9c47c70c25fce06085f0dee9cd4b5576326140bfefd6b6efaef398",
+  "after": {
+    "schema_version": "1",
+    "memory_id": "specialist-profile-specialist-paramtype-conversion-contract-ae2089f0c4bf2dd6",
+    "revision": 1,
+    "kind": "specialist",
+    "owning_agent_id": "specialist-paramtype-conversion-contract",
+    "statement": "Owns the typed parameter conversion contract shared by CLI values, defaults, envvars, prompts, help metadata, and completion.",
+    "source_type": "validated_bootstrap",
+    "supporting_commit": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+    "evidence": [
+      {
+        "evidence_id": "evidence-012b74608f1d82b96853539a",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/exceptions.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/exceptions.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-10931cce19369a40dbae9a49",
+        "source_type": "validated_bootstrap",
+        "repository_path": "CHANGES.md",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "73ddb9996dfc8c9dcf9367a4839ffc5b06ac2f8ce552bba5e3269cc3a2239c0e",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: CHANGES.md",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-2b5b081927004124b79143ff",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/utils.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/utils.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-2c796925f8d65aafac11bfbb",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/types.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "1e988904a7a7f68abad630c7fb9c038a4345fa2e6701c976a6e51f10bdfb52dd",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/types.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-3a05579c913cc47d16c1ce18",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/termui.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "8ec8022b8e4528f873ec413194a5d1614e96da50b6c4a71f6260b326762a7e9c",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/termui.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-d823357d734a339b78ccab08",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/core.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "4c65a613c1c407dce907a4e123b12cec5fe0f62088a8b9f86fabd4b60c4b6d78",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/core.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-deecdfcbe1f32ee6a5621b54",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/parser.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "a09f9f53fde6bf1ba022e36d1da0804d9e7a9601261d18208c9892a84818ae30",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/parser.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      },
+      {
+        "evidence_id": "evidence-e7836edc46a0784aacbfbf82",
+        "source_type": "validated_bootstrap",
+        "repository_path": "src/click/__init__.py",
+        "commit_sha": "68e7ea7228ca144c52e4d1d282cc09da59f7771f",
+        "sha256": "5abfc54d37d47cc788b7e7a05e9514787f8c5a0b7db429d0f24d748ac89964ca",
+        "line_start": null,
+        "line_end": null,
+        "external_ref": null,
+        "description": "Tracked repository evidence for specialist and procedure discovery: src/click/__init__.py",
+        "observed_at": "2026-08-25T01:48:48.000Z",
+        "actor": "agentify-specialist-discovery"
+      }
+    ],
+    "confidence": "high",
+    "freshness": "current",
+    "dependent_paths": [
+      "CHANGES.md",
+      "src/click/__init__.py",
+      "src/click/core.py",
+      "src/click/exceptions.py",
+      "src/click/parser.py",
+      "src/click/termui.py",
+      "src/click/types.py",
+      "src/click/utils.py"
+    ],
+    "invalidation_conditions": [
+      "Revalidate when any specialist freshness dependency changes or disappears."
+    ],
+    "superseded_by": null,
+    "contradicts": [],
+    "human_attribution": null,
+    "tags": [
+      "concern-paramtype-conversion-contract",
+      "specialist-profile"
+    ],
+    "accepted_candidate_ids": [
+      "candidate-be2c9e62453dc00f98c4a2df527d8381"
+    ],
+    "created_at": "2026-08-26T06:07:40.992Z",
+    "updated_at": "2026-08-26T06:07:40.992Z",
+    "semantic_digest": "6d4563485ca59f67e4dabc6a116db4ec9583cb403bcd96266d6a67b1c45af2b2",
+    "payload": {
+      "specialist_id": "specialist-paramtype-conversion-contract",
+      "concern": "ParamType conversion contract",
+      "one_line": "Owns the typed parameter conversion contract shared by CLI values, defaults, envvars, prompts, help metadata, and completion.",
+      "covers": "The public ParamType export, ParamType and its subclasses, convert_type inference, composite arity, Choice normalization, numeric ranges, Bool, File, Path, Tuple, conversion failures, utility-backed file values, and all core/termui consumers.",
+      "excludes": "Argument parser construction, shell completion provider integration, exception rendering, and broader Context/resource mechanics.",
+      "flows": [
+        {
+          "name": "CLI value to typed value",
+          "description": "The public type contract is exported, parser output enters Parameter processing, and ParamType converts or rejects the value through the standardized exception path.",
+          "steps": [
+            {
+              "path": "src/click/__init__.py",
+              "what_happens": "The public package initializer re-exports ParamType and built-in types such as Choice, File, Path, Tuple, and UUID."
+            },
+            {
+              "path": "src/click/parser.py",
+              "what_happens": "Option parser supplies raw argument values and preserves composite argument grouping."
+            },
+            {
+              "path": "src/click/core.py",
+              "what_happens": "Parameter.type_cast_value calls the stored ParamType for scalar, multiple, or composite values."
+            },
+            {
+              "path": "src/click/types.py",
+              "what_happens": "ParamType.__call__ delegates to convert or fail, returning a typed value or BadParameter."
+            },
+            {
+              "path": "src/click/exceptions.py",
+              "what_happens": "BadParameter is propagated and rendered as a usage error with parameter context."
+            }
+          ]
+        },
+        {
+          "name": "prompt, envvar, and file conversion",
+          "description": "Prompt and environment values reuse conversion without always having a full Context, while File and Path use utility wrappers for stream and filename behavior.",
+          "steps": [
+            {
+              "path": "src/click/termui.py",
+              "what_happens": "prompt uses convert_type and invokes the converter with param/ctx possibly None."
+            },
+            {
+              "path": "src/click/core.py",
+              "what_happens": "Environment strings are split using the type's splitter and converted element by element."
+            },
+            {
+              "path": "src/click/types.py",
+              "what_happens": "File and Path select path-aware conversion and register opened resources with the invocation context."
+            },
+            {
+              "path": "src/click/utils.py",
+              "what_happens": "_LazyFile, open_file support, and format_filename provide the file and display primitives consumed by File and Path."
+            },
+            {
+              "path": "CHANGES.md",
+              "what_happens": "The release history records the ParamType second input type parameter and generic prompt return contract."
+            }
+          ]
+        }
+      ],
+      "touchpoints": [
+        {
+          "path": "CHANGES.md",
+          "symbol": "8.5.0 ParamType changes",
+          "role": "Release compatibility record for generic conversion and prompt typing.",
+          "line_range": [
+            61,
+            67
+          ],
+          "centrality": "supporting"
+        },
+        {
+          "path": "src/click/__init__.py",
+          "symbol": "ParamType and built-in type re-exports",
+          "role": "Public typed conversion API surface.",
+          "line_range": [
+            54,
+            69
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/core.py",
+          "symbol": "Parameter.type_cast_value",
+          "role": "Sole scalar/multiple/composite dispatch point.",
+          "line_range": [
+            2522,
+            2580
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/exceptions.py",
+          "symbol": "BadParameter/MissingParameter",
+          "role": "Standard conversion failure and missing-value reporting.",
+          "line_range": [
+            101,
+            220
+          ],
+          "centrality": "supporting"
+        },
+        {
+          "path": "src/click/parser.py",
+          "symbol": "_OptionParser.parse_args",
+          "role": "Raw argv and composite grouping input to Parameter conversion.",
+          "line_range": [
+            213,
+            535
+          ],
+          "centrality": "supporting"
+        },
+        {
+          "path": "src/click/termui.py",
+          "symbol": "prompt",
+          "role": "Context-less prompt conversion consumer.",
+          "line_range": [
+            143,
+            285
+          ],
+          "centrality": "supporting"
+        },
+        {
+          "path": "src/click/types.py",
+          "symbol": "Choice",
+          "role": "Normalized choice conversion and completion.",
+          "line_range": [
+            331,
+            506
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/types.py",
+          "symbol": "File",
+          "role": "File/stream conversion and close registration.",
+          "line_range": [
+            904,
+            1037
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/types.py",
+          "symbol": "ParamType",
+          "role": "Abstract generic conversion, failure, envvar, metadata, and completion contract.",
+          "line_range": [
+            54,
+            226
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/types.py",
+          "symbol": "Path",
+          "role": "Filesystem validation and path coercion.",
+          "line_range": [
+            1048,
+            1238
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/types.py",
+          "symbol": "Tuple/convert_type",
+          "role": "Composite conversion and Python-type inference.",
+          "line_range": [
+            1243,
+            1503
+          ],
+          "centrality": "core"
+        },
+        {
+          "path": "src/click/utils.py",
+          "symbol": "_LazyFile/format_filename",
+          "role": "Lazy file and safe filename primitives used by file parameter types.",
+          "line_range": [
+            103,
+            210
+          ],
+          "centrality": "supporting"
+        }
+      ],
+      "invariants": [
+        {
+          "rule": "Custom convert accepts already-correct values and may receive param=None and ctx=None.",
+          "why": "Defaults and prompt input reuse the same conversion path without a full invocation context.",
+          "reference": "docs/parameter-types.md"
+        },
+        {
+          "rule": "Type failures use self.fail to produce BadParameter.",
+          "why": "Prompt catches UsageError/BadParameter and retries with the intended message.",
+          "reference": "src/click/types.py"
+        },
+        {
+          "rule": "Composite is_composite and arity determine Parameter nargs behavior.",
+          "why": "Tuple-like types must retain fixed-arity conversion semantics.",
+          "reference": "src/click/core.py"
+        },
+        {
+          "rule": "File and Path use os.path.pathsep as their envvar splitter.",
+          "why": "Path-list values differ from whitespace-split scalar values.",
+          "reference": "src/click/types.py"
+        }
+      ],
+      "pitfalls": [
+        {
+          "risk": "A custom converter assumes ctx or param is always present.",
+          "consequence": "click.prompt with the custom type fails with AttributeError.",
+          "reference": "src/click/termui.py"
+        },
+        {
+          "risk": "Choice normalization produces duplicate keys.",
+          "consequence": "Valid-looking choices cannot be matched reliably.",
+          "reference": "src/click/types.py"
+        },
+        {
+          "risk": "ParamType generic changes are tested differently across supported Python/type-checker versions.",
+          "consequence": "Custom public types can regress on older supported runtimes or static checking.",
+          "reference": "CHANGES.md"
+        }
+      ],
+      "entry_questions": [
+        "Can the value already be the target Python type?",
+        "Does conversion run from prompt where param/ctx are None?",
+        "Does this preserve composite arity, envvar splitting, and BadParameter propagation?",
+        "For File/Path, is resource cleanup registered only with a Context?"
+      ],
+      "context_paths": [
+        "CHANGES.md",
+        "src/click/__init__.py",
+        "src/click/core.py",
+        "src/click/exceptions.py",
+        "src/click/parser.py",
+        "src/click/termui.py",
+        "src/click/types.py",
+        "src/click/utils.py"
+      ],
+      "related_specialists": [
+        "specialist-clirunner-isolation-and-terminal-stream-lifecycle",
+        "specialist-command-invocation-and-context-lifecycle",
+        "specialist-output-streams-file-wrappers-and-utility-i-o-contract",
+        "specialist-terminal-ui-process-and-stream-lifecycle"
+      ],
+      "validation_commands": [
+        "add a regression test under tests/",
+        "add unit tests under tests/",
+        "pytest tests/test_info_dict.py",
+        "pytest tests/test_types.py",
+        "pytest tests/test_utils/test_prompt.py",
+        "uv build",
+        "uv lock if dependencies changed",
+        "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API",
+        "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+        "uv run --locked --no-default-groups --group dev tox run -e typing",
+        "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+        "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files"
+      ]
+    },
+    "content_digest": "e86112814a9c47c70c25fce06085f0dee9cd4b5576326140bfefd6b6efaef398"
+  },
+  "event_digest": "ae8e308315508f60d2cf8e31aec7d1d7bc49718fa1b14c4a7dc22cdf851bf247"
+}

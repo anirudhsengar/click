@@ -1,0 +1,2093 @@
+{
+  "meta": {
+    "project_type": "typed Python library",
+    "languages": [
+      "python"
+    ],
+    "frameworks": [
+      "pytest",
+      "tox",
+      "Sphinx",
+      "uv",
+      "flit"
+    ],
+    "domain_hypothesis": "Composable command line interface toolkit",
+    "lifecycle": {
+      "sdlc_model": "GitHub Flow with ticket-first PR review, CI gates, and tag-driven PyPI releases",
+      "issue_types": [
+        "bug_report",
+        "feature_request",
+        "documentation_change"
+      ],
+      "review_loop": {
+        "present": true,
+        "kind": "none"
+      },
+      "documentation_loop": {
+        "present": true,
+        "kind": "none"
+      },
+      "conditional_docs": {
+        "present": true,
+        "path": "docs/",
+        "last_updated": null,
+        "entries_count": 0
+      },
+      "aiw_scripts": [],
+      "agent_definitions": {
+        "count": 0,
+        "paths": []
+      }
+    },
+    "documentation": {
+      "agents_md": null,
+      "agents_md_line_count": null,
+      "has_ai_docs": false,
+      "has_app_docs": false,
+      "has_specs": false,
+      "conditional_docs_path": "docs/",
+      "readme_metrics": {
+        "present": true,
+        "line_count": 53,
+        "section_count": 3
+      },
+      "ai_docs_freshness": {
+        "last_updated": null,
+        "file_count": 0
+      },
+      "specs_archive": {
+        "present": false,
+        "file_count": 0,
+        "date_range": null
+      },
+      "postmortems_dir": null,
+      "changelog_present": true
+    },
+    "formats": [
+      "toml",
+      "yaml",
+      "markdown",
+      "reStructuredText"
+    ]
+  },
+  "skeleton": {
+    "top_level_tree": [
+      "README.md",
+      "pyproject.toml",
+      "src/",
+      "tests/",
+      "docs/",
+      "examples/",
+      "CHANGES.md",
+      ".github/"
+    ],
+    "entry_points": [
+      {
+        "path": "src/click/__init__.py",
+        "role": "public Click package API entry point",
+        "language": "python",
+        "run_command": "python -c \"import click\""
+      },
+      {
+        "path": "pyproject.toml",
+        "role": "Python package build and test metadata",
+        "language": "toml",
+        "run_command": "python -m pytest"
+      }
+    ],
+    "code_test_mirror": {
+      "observed": false,
+      "pattern": "unknown"
+    },
+    "first_5_files_for_fresh_agent": [
+      {
+        "path": "README.md",
+        "why": "Project purpose and high-level usage"
+      },
+      {
+        "path": "pyproject.toml",
+        "why": "Supported Python versions, dependencies, build and tool configuration"
+      },
+      {
+        "path": "src/click/__init__.py",
+        "why": "Public package exports and version surface"
+      },
+      {
+        "path": "src/click/core.py",
+        "why": "Core command, context, and invocation implementation"
+      },
+      {
+        "path": "tests/test_basic.py",
+        "why": "Basic expected behavior and test idioms"
+      }
+    ],
+    "app_vs_agentic_layer": {
+      "app_layer": "unknown",
+      "agentic_layer": null,
+      "bleed_risk_paths": []
+    }
+  },
+  "module_graph": {
+    "edges": [
+      {
+        "from": "src/click/core.py",
+        "to": "src/click/types.py",
+        "kind": "runtime import"
+      },
+      {
+        "from": "src/click/core.py",
+        "to": "src/click/parser.py",
+        "kind": "runtime import"
+      },
+      {
+        "from": "src/click/core.py",
+        "to": "src/click/globals.py",
+        "kind": "state mutation"
+      },
+      {
+        "from": "src/click/core.py",
+        "to": "src/click/termui.py",
+        "kind": "runtime import"
+      },
+      {
+        "from": "src/click/types.py",
+        "to": "src/click/exceptions.py",
+        "kind": "runtime import"
+      }
+    ],
+    "parallelizable_subtrees": [],
+    "shared_state": [],
+    "client_server_split": null,
+    "shared_abstractions": [
+      "src/click/globals.py",
+      "src/click/_utils.py",
+      "src/click/exceptions.py",
+      "src/click/utils.py"
+    ]
+  },
+  "type_contract_surface": {
+    "pydantic_models": [],
+    "typescript_interfaces": [
+      {
+        "path": "src/click/types.py",
+        "name": "ParamType",
+        "fields": [
+          "is_composite",
+          "arity",
+          "name",
+          "envvar_list_splitter",
+          "to_info_dict",
+          "__call__",
+          "get_metavar",
+          "get_missing_message",
+          "convert",
+          "split_envvar_value",
+          "fail",
+          "shell_complete"
+        ]
+      }
+    ],
+    "db_models": [],
+    "idks": [],
+    "stable_types": [],
+    "volatile_types": [],
+    "one_type_trace": null,
+    "type_definitions": [
+      {
+        "path": "src/click/types.py",
+        "name": "ParamType",
+        "kind": "abstract generic class",
+        "language": "python",
+        "fields": [
+          "is_composite",
+          "arity",
+          "name",
+          "envvar_list_splitter",
+          "to_info_dict",
+          "__call__",
+          "get_metavar",
+          "get_missing_message",
+          "convert",
+          "split_envvar_value",
+          "fail",
+          "shell_complete"
+        ]
+      }
+    ]
+  },
+  "conventions": {
+    "naming": {
+      "files": "snake_case.py; private implementation modules use a leading underscore",
+      "classes": "PascalCase",
+      "functions": "snake_case verb_noun; test functions use test_<topic>",
+      "branches": "unknown",
+      "commits": "unknown"
+    },
+    "error_handling": {
+      "raise_vs_return": "raise",
+      "custom_exceptions": true,
+      "log_then_throw": false
+    },
+    "logging": {
+      "pattern": "No logging module observed; normal output routes through click.echo/secho and stderr uses err=True",
+      "observed": false
+    },
+    "state_passing": "constructor_injection",
+    "file_size": {
+      "observed_avg": 0,
+      "observed_max": 0
+    },
+    "patterns": []
+  },
+  "pitfalls": [
+    {
+      "module": "src/click/parser.py",
+      "what": "The optparse-derived parser and related APIs are deprecated and scheduled for removal in Click 9.0.",
+      "consequence": "New code depending on the deprecated parser surface risks warnings, compatibility breakage, and divergent parser behavior.",
+      "source_reference": "src/click/parser.py",
+      "line_ref": 237
+    },
+    {
+      "module": "src/click/types.py",
+      "what": "ParamType generic behavior changed across 8.4 and 8.5, including a second input type parameter and runtime fallback for older Python versions.",
+      "consequence": "Custom parameter types can pass one checker/runtime combination while failing another supported Python or type-checking path.",
+      "source_reference": "CHANGES.md",
+      "line_ref": 8
+    }
+  ],
+  "validation_surface": {
+    "test_command": "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+    "test_runtime_seconds_estimate": 0,
+    "lint_command": "uv run --locked --no-default-groups --group pre-commit pre-commit run --show-diff-on-failure --color=always --all-files",
+    "typecheck_command": "uv run --locked --no-default-groups --group dev tox run -e typing",
+    "e2e_command": null,
+    "spec_compliance_evidence": [
+      "tests/",
+      "docs/testing.md",
+      "tox docs environment",
+      ".github/workflows/tests.yaml"
+    ],
+    "severity_taxonomy": [
+      "blocker",
+      "tech_debt",
+      "nit"
+    ],
+    "per_change_type": {
+      "chore": {
+        "mandatory": [
+          "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+          "uv lock if dependencies changed"
+        ],
+        "optional": [
+          "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+          "uv run --locked --no-default-groups --group dev tox run -e docs if docs changed"
+        ]
+      },
+      "bug": {
+        "mandatory": [
+          "add a regression test under tests/",
+          "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+          "uv run --locked --no-default-groups --group dev tox run -e py3.14"
+        ],
+        "optional": [
+          "uv run --locked --no-default-groups --group dev tox run -e typing when public types change",
+          "uv run --locked --no-default-groups --group dev tox run -e docs when behavior is documented"
+        ]
+      },
+      "feature": {
+        "mandatory": [
+          "add unit tests under tests/",
+          "uv run --locked --no-default-groups --group pre-commit pre-commit run --all-files",
+          "uv run --locked --no-default-groups --group dev tox run -e py3.14",
+          "uv run --locked --no-default-groups --group dev tox run -e typing for typed surface",
+          "uv run --locked --no-default-groups --group dev tox run -e docs for changed public API"
+        ],
+        "optional": [
+          "uv run --locked --no-default-groups --group dev tox run -e random",
+          "uv run --locked --no-default-groups --group dev tox run -e stress"
+        ]
+      }
+    },
+    "coverage": {
+      "D6_validation": {
+        "status": "covered",
+        "confidence": "high",
+        "evidence_summary": "pyproject defines pytest, tox, ruff/pre-commit, mypy, pyright, and Sphinx commands; CI runs locked tox and typing checks across supported Python versions.",
+        "evidence": [
+          {
+            "path": "pyproject.toml",
+            "excerpt": "testpaths = [\"tests\"]",
+            "kind": "positive"
+          },
+          {
+            "path": "pyproject.toml",
+            "excerpt": "commands = [[\"pre-commit\", \"run\", \"--all-files\"]]",
+            "kind": "positive"
+          },
+          {
+            "path": ".github/workflows/tests.yaml",
+            "excerpt": "uv run --locked --no-default-groups --group dev tox run",
+            "kind": "positive"
+          }
+        ]
+      }
+    }
+  },
+  "operational_surface": {
+    "build": {
+      "command": "uv build",
+      "recipe_file": "pyproject.toml"
+    },
+    "run": {
+      "command": "python -c \"import click\"",
+      "env_vars_required": [],
+      "ports": [],
+      "services": [],
+      "dependencies": [
+        "Python >= 3.10",
+        "flit_core >= 3.11,<4"
+      ]
+    },
+    "deploy": null,
+    "env_vars": [],
+    "ci_cd": {
+      "triggers": [
+        "pull_request",
+        "push to main or stable",
+        "tag push"
+      ],
+      "gates": [
+        "tox tests",
+        "pre-commit",
+        "mypy and pyright",
+        "Sphinx docs",
+        "zizmor"
+      ],
+      "artifacts": [
+        "dist/"
+      ]
+    },
+    "git_workflow": {
+      "main_branch": "main",
+      "branch_naming": "not observed",
+      "worktree_pattern": "not observed",
+      "cleanup": "not observed"
+    },
+    "port_ranges": {
+      "dev": "unknown"
+    },
+    "shutdown_procedure": {
+      "script": null,
+      "commands": []
+    },
+    "spawned_subprocesses": []
+  },
+  "security_surface": {
+    "paths": {
+      "zero_access": [
+        ".env*",
+        "*.pem",
+        "*.key",
+        "*.crt",
+        "secrets.*",
+        "credentials*",
+        "**/secrets/**",
+        "**/credentials/**"
+      ],
+      "read_only": [
+        ".gitignore",
+        "pyproject.toml",
+        "uv.lock",
+        ".github/workflows/**"
+      ],
+      "no_delete": [
+        ".git/**",
+        "uv.lock",
+        ".github/workflows/**"
+      ],
+      "fully_writable": [
+        "src/**",
+        "tests/**",
+        "docs/**",
+        "examples/**"
+      ]
+    },
+    "bash_safe_patterns": [],
+    "bash_blocked_patterns": [
+      "rm\\s+(-rf|-R\\b|--recursive)",
+      "git\\s+reset\\s+--hard",
+      "git\\s+clean\\s+-[fFdDxX]+",
+      "git\\s+push\\s+(-f|--force)\\b",
+      "\\bsudo\\b",
+      "\\bmkfs(\\.\\w+)?\\b",
+      "\\bdd\\s+.*\\bof=/dev/",
+      "\\b(shutdown|poweroff|reboot|halt)\\b",
+      "\\b(nc|netcat)\\s",
+      "\\$\\([^)]*\\)"
+    ],
+    "banned_interpreters": [],
+    "env_allowlist": [],
+    "production_credentials": [],
+    "damage_control_rules": [
+      "Do not inspect or expose secret-like files or credential values",
+      "Do not execute shell=True or dynamic eval/exec paths",
+      "Treat subprocess pager/editor/URL launchers and shell completion as process-boundary code",
+      "Preserve CI least-privilege permissions and persist-credentials=false"
+    ],
+    "security_checklist": {
+      "tools": [],
+      "commands": [],
+      "paths": [],
+      "env": [],
+      "blocks": [],
+      "logs": []
+    }
+  },
+  "coverage": {
+    "D1_topography": {
+      "status": "covered",
+      "confidence": "high",
+      "evidence_summary": "Root inventory, Python package source, tests, docs, examples, and pyproject establish the repository shape and fresh-agent reading order.",
+      "evidence": [
+        {
+          "path": "README.md",
+          "excerpt": "Click is a Python package for creating beautiful command line interfaces",
+          "kind": "positive"
+        },
+        {
+          "path": "pyproject.toml",
+          "excerpt": "name = \"click\"",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/__init__.py",
+          "excerpt": "Tracked public package initializer.",
+          "kind": "positive"
+        },
+        {
+          "path": "tests/test_basic.py",
+          "excerpt": "Tracked basic behavior tests.",
+          "kind": "positive"
+        }
+      ]
+    },
+    "D2_module_boundaries": {
+      "status": "covered",
+      "confidence": "high",
+      "evidence_summary": "core.py imports the main runtime modules and globals.py provides the thread-local Context stack shared across execution.",
+      "evidence": [
+        {
+          "path": "src/click/core.py",
+          "excerpt": "from .globals import pop_context",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/core.py",
+          "excerpt": "from .parser import _OptionParser",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/globals.py",
+          "excerpt": "_local = threading.local()",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/parser.py",
+          "excerpt": "from ._utils import FLAG_NEEDS_VALUE",
+          "kind": "positive"
+        }
+      ]
+    },
+    "D3_type_contract": {
+      "status": "covered",
+      "confidence": "high",
+      "evidence_summary": "ParamType is a public generic abstract parameter-conversion contract, re-exported by click and consumed by core parameter processing and prompt conversion.",
+      "evidence": [
+        {
+          "path": "src/click/types.py",
+          "excerpt": "class ParamType(t.Generic[_ValueT_co, _InputT_contra], abc.ABC):",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/__init__.py",
+          "excerpt": "from .types import ParamType as ParamType",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/core.py",
+          "excerpt": "self.type = types.convert_type(type, default)",
+          "kind": "positive"
+        },
+        {
+          "path": "docs/parameter-types.md",
+          "excerpt": "subclass `ParamType[int]`",
+          "kind": "positive"
+        }
+      ]
+    },
+    "D4_conventions": {
+      "status": "covered",
+      "confidence": "high",
+      "evidence_summary": "Source uses snake_case modules/functions, PascalCase classes, underscore-prefixed private modules, typed exception raising, and click.echo/secho instead of logging.",
+      "evidence": [
+        {
+          "path": "src/click/core.py",
+          "excerpt": "from __future__ import annotations",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/exceptions.py",
+          "excerpt": "class ClickException(Exception):",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/utils.py",
+          "excerpt": "def echo(",
+          "kind": "positive"
+        },
+        {
+          "path": "tests/test_basic.py",
+          "excerpt": "def test_",
+          "kind": "positive"
+        },
+        {
+          "path": "pyproject.toml",
+          "excerpt": "select = [",
+          "kind": "positive"
+        }
+      ]
+    },
+    "D5_pitfalls": {
+      "status": "covered",
+      "confidence": "high",
+      "evidence_summary": "Click's test harness deliberately mutates process-global interpreter state, while parser/type deprecations and warning-as-error settings create compatibility and validation traps.",
+      "evidence": [
+        {
+          "path": "docs/testing.md",
+          "excerpt": "These tools should only be used for testing since they change the entire interpreter state for simplicity. They are not thread-safe",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/testing.py",
+          "excerpt": "changes the global interpreter state",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/parser.py",
+          "excerpt": "will be removed in Click 9.0",
+          "kind": "positive"
+        },
+        {
+          "path": "pyproject.toml",
+          "excerpt": "filterwarnings = [",
+          "kind": "positive"
+        }
+      ]
+    },
+    "D6_validation": {
+      "status": "covered",
+      "confidence": "high",
+      "evidence_summary": "pyproject defines pytest, tox, ruff/pre-commit, mypy, pyright, and Sphinx commands; CI runs locked tox and typing checks across supported Python versions.",
+      "evidence": [
+        {
+          "path": "pyproject.toml",
+          "excerpt": "testpaths = [\"tests\"]",
+          "kind": "positive"
+        },
+        {
+          "path": "pyproject.toml",
+          "excerpt": "commands = [[\"pytest\", \"-v\", \"--tb=short\"",
+          "kind": "positive"
+        },
+        {
+          "path": "pyproject.toml",
+          "excerpt": "commands = [[\"pre-commit\", \"run\", \"--all-files\"]]",
+          "kind": "positive"
+        },
+        {
+          "path": "pyproject.toml",
+          "excerpt": "[tool.mypy]",
+          "kind": "positive"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "excerpt": "uv run --locked --no-default-groups --group dev tox run",
+          "kind": "positive"
+        },
+        {
+          "path": "docs/testing.md",
+          "excerpt": "The examples use [pytest] style tests.",
+          "kind": "positive"
+        }
+      ]
+    },
+    "D7_operational": {
+      "status": "covered",
+      "confidence": "high",
+      "evidence_summary": "Click builds as a flit Python distribution with uv, has no server or ports, and CI exercises the package through tox on main/stable and release workflows.",
+      "evidence": [
+        {
+          "path": "pyproject.toml",
+          "excerpt": "build-backend = \"flit_core.buildapi\"",
+          "kind": "positive"
+        },
+        {
+          "path": "pyproject.toml",
+          "excerpt": "requires-python = \">=3.10\"",
+          "kind": "positive"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "excerpt": "branches: [main, stable]",
+          "kind": "positive"
+        },
+        {
+          "path": ".github/workflows/publish.yaml",
+          "excerpt": "pypa/gh-action-pypi-publish",
+          "kind": "positive"
+        }
+      ]
+    },
+    "D8_security": {
+      "status": "covered",
+      "confidence": "high",
+      "evidence_summary": "The repository has no checked-in secret files but Click and its CI cross credential and process boundaries; read-only audit policy must protect secret-like paths and block destructive shell operations.",
+      "evidence": [
+        {
+          "path": ".gitignore",
+          "excerpt": "dist/",
+          "kind": "positive"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "excerpt": "permissions: {}",
+          "kind": "positive"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "excerpt": "persist-credentials: false",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "excerpt": "subprocess.Popen",
+          "kind": "positive"
+        },
+        {
+          "path": "src/click/shell_completion.py",
+          "excerpt": "subprocess.run",
+          "kind": "positive"
+        },
+        {
+          "path": ".env",
+          "excerpt": "No .env file found in repository.",
+          "kind": "absence"
+        }
+      ]
+    },
+    "D9_process": {
+      "status": "covered",
+      "confidence": "high",
+      "evidence_summary": "The repository documents ticket-first PR review, issue classes, required tests, CI gates, and tag-driven release publishing.",
+      "evidence": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "excerpt": "name: Bug report",
+          "kind": "positive"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/feature-request.md",
+          "excerpt": "name: Feature request",
+          "kind": "positive"
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "excerpt": "Before opening a PR, open a ticket",
+          "kind": "positive"
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "excerpt": "Add tests that demonstrate the correct behavior of the change.",
+          "kind": "positive"
+        },
+        {
+          "path": ".github/workflows/publish.yaml",
+          "excerpt": "tags: ['*']",
+          "kind": "positive"
+        }
+      ]
+    },
+    "D10_documentation": {
+      "status": "covered",
+      "confidence": "high",
+      "evidence_summary": "README, docs/, the testing guide, API references, and CHANGES.md are the authoritative user, maintainer, and release documentation surfaces.",
+      "evidence": [
+        {
+          "path": "README.md",
+          "excerpt": "## Contributing",
+          "kind": "positive"
+        },
+        {
+          "path": "docs/quickstart.md",
+          "excerpt": "# Quickstart",
+          "kind": "positive"
+        },
+        {
+          "path": "docs/testing.md",
+          "excerpt": "# Testing Click Applications",
+          "kind": "positive"
+        },
+        {
+          "path": "CHANGES.md",
+          "excerpt": "Click 8.5.0",
+          "kind": "positive"
+        }
+      ]
+    }
+  },
+  "open_questions": [
+    "Initial draft: gather repository evidence before closing coverage."
+  ],
+  "exploration_log": [
+    {
+      "ts": "2026-08-26T05:35:20.576Z",
+      "action": "draft_bootstrap",
+      "target": ".",
+      "observation": "Created an honest gap-marked map to receive incremental audit evidence."
+    },
+    {
+      "ts": "2026-08-26T05:35:39.913Z",
+      "action": "gap_filler_delta",
+      "target": "D1_topography",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:35:39.915Z",
+      "action": "gap_filler_delta",
+      "target": "D1_topography",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:36:46.161Z",
+      "action": "gap_filler_delta",
+      "target": "D2_module_boundaries",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:36:46.163Z",
+      "action": "gap_filler_delta",
+      "target": "D2_module_boundaries",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:36:46.166Z",
+      "action": "gap_filler_delta",
+      "target": "D3_type_contract",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:36:46.168Z",
+      "action": "gap_filler_delta",
+      "target": "D3_type_contract",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:37:12.345Z",
+      "action": "gap_filler_delta",
+      "target": "D1_topography",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:37:12.346Z",
+      "action": "gap_filler_delta",
+      "target": "D1_topography",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:37:12.348Z",
+      "action": "gap_filler_delta",
+      "target": "D2_module_boundaries",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:37:12.348Z",
+      "action": "gap_filler_delta",
+      "target": "D2_module_boundaries",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:37:12.350Z",
+      "action": "gap_filler_delta",
+      "target": "D3_type_contract",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:37:12.350Z",
+      "action": "gap_filler_delta",
+      "target": "D3_type_contract",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:39:23.000Z",
+      "action": "gap_filler_delta",
+      "target": "D4_conventions",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:39:23.001Z",
+      "action": "gap_filler_delta",
+      "target": "D4_conventions",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:39:23.009Z",
+      "action": "gap_filler_delta",
+      "target": "D6_validation",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:39:23.011Z",
+      "action": "gap_filler_delta",
+      "target": "D6_validation",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:41:11.416Z",
+      "action": "gap_filler_delta",
+      "target": "D7_operational",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:41:11.417Z",
+      "action": "gap_filler_delta",
+      "target": "D7_operational",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:41:11.426Z",
+      "action": "gap_filler_delta",
+      "target": "D8_security",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:41:11.427Z",
+      "action": "gap_filler_delta",
+      "target": "D8_security",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:45:01.034Z",
+      "action": "gap_filler_delta",
+      "target": "D5_pitfalls",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:45:01.036Z",
+      "action": "gap_filler_delta",
+      "target": "D5_pitfalls",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:45:01.044Z",
+      "action": "gap_filler_delta",
+      "target": "D9_process",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:45:01.046Z",
+      "action": "gap_filler_delta",
+      "target": "D9_process",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T05:45:01.054Z",
+      "action": "gap_filler_delta",
+      "target": "D10_documentation",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T05:45:01.056Z",
+      "action": "gap_filler_delta",
+      "target": "D10_documentation",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T06:02:18.588Z",
+      "action": "gap_filler_delta",
+      "target": "(no-dim)",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    },
+    {
+      "ts": "2026-08-26T06:02:18.590Z",
+      "action": "gap_filler_delta",
+      "target": "(no-dim)",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T06:04:36.308Z",
+      "action": "gap_filler_delta",
+      "target": "(no-dim)",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T06:04:46.909Z",
+      "action": "gap_filler_delta",
+      "target": "(no-dim)",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T06:04:46.913Z",
+      "action": "gap_filler_delta",
+      "target": "(no-dim)",
+      "observation": "merged delta from write_map_delta (strategy=deep_merge)"
+    },
+    {
+      "ts": "2026-08-26T06:07:06.398Z",
+      "action": "gap_filler_delta",
+      "target": "(no-dim)",
+      "observation": "merged delta from write_map_delta (strategy=shallow_overwrite)"
+    }
+  ],
+  "schema_version": "1",
+  "generated_at": "2026-08-26T05:35:20.576Z",
+  "customization_evidence": {
+    "custom_tool_candidates": [],
+    "skill_candidates": []
+  },
+  "concern_evidence": {
+    "concerns": [
+      {
+        "concern": "Command invocation and Context lifecycle",
+        "one_line": "Owns the end-to-end contract from decorated command construction through argv parsing, Context management, callback dispatch, help, and standalone exit translation.",
+        "covers": "The public package command API, Command, Group, Context, Parameter processing order and source arbitration, parser integration, sentinel handling, current-context stack, ClickException handling, help option installation, and callback/subcommand dispatch.",
+        "excludes": "Concrete per-parameter conversion rules, shell completion provider internals, terminal I/O, and CliRunner capture mechanics.",
+        "flows": [
+          {
+            "name": "decorator to command execution",
+            "description": "The public package surface exposes command types, decorators construct a command, core creates invocation state, the parser consumes argv using shared sentinels, and command errors are rendered or translated at the standalone boundary.",
+            "steps": [
+              {
+                "path": "src/click/__init__.py",
+                "what_happens": "The public package initializer re-exports Command, Group, Context, Parameter, decorators, and Click's public exception classes."
+              },
+              {
+                "path": "src/click/decorators.py",
+                "what_happens": "command/group factories instantiate Command or Group and attach the callback and deferred parameters."
+              },
+              {
+                "path": "src/click/core.py",
+                "what_happens": "Command.main creates a Context, installs parameters, parses arguments, invokes callbacks or subcommands, and handles standalone exits."
+              },
+              {
+                "path": "src/click/parser.py",
+                "what_happens": "The option parser resolves options and positional arguments into values, leftovers, and parameter order."
+              },
+              {
+                "path": "src/click/_utils.py",
+                "what_happens": "UNSET and FLAG_NEEDS_VALUE distinguish absent values and flag-like options while core and parser coordinate parameter handling."
+              },
+              {
+                "path": "src/click/globals.py",
+                "what_happens": "push_context/pop_context maintain the active thread-local Context stack during nested invocation."
+              },
+              {
+                "path": "src/click/exceptions.py",
+                "what_happens": "ClickException, UsageError, and related subclasses render usage failures or carry exit codes back through main."
+              }
+            ]
+          }
+        ],
+        "touchpoints": [
+          {
+            "path": "src/click/__init__.py",
+            "symbol": "public re-exports and __getattr__",
+            "role": "Public package entry point for command, context, parameter, utility, terminal, and exception APIs.",
+            "line_range": [
+              8,
+              145
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/decorators.py",
+            "symbol": "command/group",
+            "role": "Public construction surface for Command and Group.",
+            "line_range": [
+              120,
+              240
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/core.py",
+            "symbol": "Command.main",
+            "role": "Top-level parse/invoke/exception-to-exit boundary.",
+            "line_range": [
+              1360,
+              1475
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/core.py",
+            "symbol": "Context",
+            "role": "Owns invocation state, nesting depth, cleanup, and callback invocation.",
+            "line_range": [
+              243,
+              935
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/core.py",
+            "symbol": "Parameter.handle_parse_result",
+            "role": "Writes ctx.params and arbitrates parameter sources.",
+            "line_range": [
+              2740,
+              2820
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/core.py",
+            "symbol": "Group.invoke",
+            "role": "Resolves and dispatches subcommands and chain results.",
+            "line_range": [
+              1790,
+              2050
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/parser.py",
+            "symbol": "_OptionParser.parse_args",
+            "role": "Converts argv into option values, positional values, leftovers, and processing order.",
+            "line_range": [
+              213,
+              535
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/_utils.py",
+            "symbol": "UNSET/FLAG_NEEDS_VALUE",
+            "role": "Shared sentinel contract for absent and flag-like parameter values.",
+            "line_range": [
+              6,
+              35
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/globals.py",
+            "symbol": "push_context/pop_context/get_current_context",
+            "role": "Current-context stack used by callbacks and errors.",
+            "line_range": [
+              1,
+              80
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/exceptions.py",
+            "symbol": "ClickException/UsageError",
+            "role": "Structured invocation failures and standalone exit rendering.",
+            "line_range": [
+              29,
+              150
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/utils.py",
+            "symbol": "_detect_program_name/_expand_args/_make_default_short_help",
+            "role": "Shared command-name, argv expansion, help-shortening, and echo helpers consumed by core.",
+            "line_range": [
+              40,
+              90
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "tests/test_basic.py",
+            "symbol": "basic command and group tests",
+            "role": "End-to-end regression coverage for help, invocation, groups, returns, and option behavior.",
+            "line_range": [
+              8,
+              155
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "CHANGES.md",
+            "symbol": "8.5.0 command changes",
+            "role": "Release record for reserved help storage and feature-switch behavior in command invocation.",
+            "line_range": [
+              39,
+              58
+            ],
+            "centrality": "supporting"
+          }
+        ],
+        "invariants": [
+          {
+            "rule": "Context cleanup waits for the outermost context exit.",
+            "why": "Nested subcommands must not tear down parent resources during dispatch.",
+            "reference": "src/click/core.py"
+          },
+          {
+            "rule": "More explicit ParameterSource values win when multiple parameters share a storage name.",
+            "why": "Feature-switch and eager parameter groups depend on deterministic source arbitration.",
+            "reference": "src/click/core.py"
+          },
+          {
+            "rule": "Command.main is the sole standalone-mode boundary translating ClickException into process exit.",
+            "why": "Embedded callers and tests rely on standalone_mode=False to receive exceptions and return values.",
+            "reference": "src/click/core.py"
+          },
+          {
+            "rule": "The default help option uses reserved storage name _click_default_help.",
+            "why": "User parameters named help must not collide with the lazy help option.",
+            "reference": "src/click/core.py"
+          }
+        ],
+        "pitfalls": [
+          {
+            "risk": "Changing parameter evaluation order or source arbitration.",
+            "consequence": "User callbacks and feature-switch groups can observe different values or side effects.",
+            "reference": "src/click/core.py"
+          },
+          {
+            "risk": "Using chain mode with unsupported optional arguments or relying on group return values in chain mode.",
+            "consequence": "Construction or result processing raises or discards values instead of invoking the intended callback contract.",
+            "reference": "src/click/core.py"
+          },
+          {
+            "risk": "Forgetting resilient_parsing for completion/help scraping paths.",
+            "consequence": "No-argument help behavior can become an error during shell completion.",
+            "reference": "src/click/core.py"
+          }
+        ],
+        "entry_questions": [
+          "Is this path standalone CLI execution or embedded/test invocation?",
+          "Does the change affect Group chain mode, invoke_without_command, or result callbacks?",
+          "Does it change ParameterSource precedence, callback order, or resilient parsing?",
+          "Could a custom Context subclass fail to propagate to subcontexts?"
+        ],
+        "validation": [
+          "pytest tests/test_basic.py tests/test_commands.py tests/test_context.py",
+          "pytest tests/test_options.py",
+          "uv run --locked --no-default-groups --group dev tox run -e py3.14"
+        ],
+        "spans_subtrees": [
+          "src/click/__init__.py",
+          "src/click/core.py",
+          "src/click/decorators.py",
+          "src/click/parser.py",
+          "src/click/_utils.py",
+          "src/click/globals.py",
+          "src/click/exceptions.py",
+          "src/click/utils.py",
+          "tests",
+          "CHANGES.md"
+        ],
+        "stability": "high",
+        "recurrence": "high",
+        "confidence": "high",
+        "last_updated": "2026-08-26T00:00:00.000Z"
+      },
+      {
+        "concern": "ParamType conversion contract",
+        "one_line": "Owns the typed parameter conversion contract shared by CLI values, defaults, envvars, prompts, help metadata, and completion.",
+        "covers": "The public ParamType export, ParamType and its subclasses, convert_type inference, composite arity, Choice normalization, numeric ranges, Bool, File, Path, Tuple, conversion failures, utility-backed file values, and all core/termui consumers.",
+        "excludes": "Argument parser construction, shell completion provider integration, exception rendering, and broader Context/resource mechanics.",
+        "flows": [
+          {
+            "name": "CLI value to typed value",
+            "description": "The public type contract is exported, parser output enters Parameter processing, and ParamType converts or rejects the value through the standardized exception path.",
+            "steps": [
+              {
+                "path": "src/click/__init__.py",
+                "what_happens": "The public package initializer re-exports ParamType and built-in types such as Choice, File, Path, Tuple, and UUID."
+              },
+              {
+                "path": "src/click/parser.py",
+                "what_happens": "Option parser supplies raw argument values and preserves composite argument grouping."
+              },
+              {
+                "path": "src/click/core.py",
+                "what_happens": "Parameter.type_cast_value calls the stored ParamType for scalar, multiple, or composite values."
+              },
+              {
+                "path": "src/click/types.py",
+                "what_happens": "ParamType.__call__ delegates to convert or fail, returning a typed value or BadParameter."
+              },
+              {
+                "path": "src/click/exceptions.py",
+                "what_happens": "BadParameter is propagated and rendered as a usage error with parameter context."
+              }
+            ]
+          },
+          {
+            "name": "prompt, envvar, and file conversion",
+            "description": "Prompt and environment values reuse conversion without always having a full Context, while File and Path use utility wrappers for stream and filename behavior.",
+            "steps": [
+              {
+                "path": "src/click/termui.py",
+                "what_happens": "prompt uses convert_type and invokes the converter with param/ctx possibly None."
+              },
+              {
+                "path": "src/click/core.py",
+                "what_happens": "Environment strings are split using the type's splitter and converted element by element."
+              },
+              {
+                "path": "src/click/types.py",
+                "what_happens": "File and Path select path-aware conversion and register opened resources with the invocation context."
+              },
+              {
+                "path": "src/click/utils.py",
+                "what_happens": "_LazyFile, open_file support, and format_filename provide the file and display primitives consumed by File and Path."
+              },
+              {
+                "path": "CHANGES.md",
+                "what_happens": "The release history records the ParamType second input type parameter and generic prompt return contract."
+              }
+            ]
+          }
+        ],
+        "touchpoints": [
+          {
+            "path": "src/click/__init__.py",
+            "symbol": "ParamType and built-in type re-exports",
+            "role": "Public typed conversion API surface.",
+            "line_range": [
+              54,
+              69
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/parser.py",
+            "symbol": "_OptionParser.parse_args",
+            "role": "Raw argv and composite grouping input to Parameter conversion.",
+            "line_range": [
+              213,
+              535
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/core.py",
+            "symbol": "Parameter.type_cast_value",
+            "role": "Sole scalar/multiple/composite dispatch point.",
+            "line_range": [
+              2522,
+              2580
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/types.py",
+            "symbol": "ParamType",
+            "role": "Abstract generic conversion, failure, envvar, metadata, and completion contract.",
+            "line_range": [
+              54,
+              226
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/types.py",
+            "symbol": "Choice",
+            "role": "Normalized choice conversion and completion.",
+            "line_range": [
+              331,
+              506
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/types.py",
+            "symbol": "File",
+            "role": "File/stream conversion and close registration.",
+            "line_range": [
+              904,
+              1037
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/types.py",
+            "symbol": "Path",
+            "role": "Filesystem validation and path coercion.",
+            "line_range": [
+              1048,
+              1238
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/types.py",
+            "symbol": "Tuple/convert_type",
+            "role": "Composite conversion and Python-type inference.",
+            "line_range": [
+              1243,
+              1503
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/utils.py",
+            "symbol": "_LazyFile/format_filename",
+            "role": "Lazy file and safe filename primitives used by file parameter types.",
+            "line_range": [
+              103,
+              210
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/exceptions.py",
+            "symbol": "BadParameter/MissingParameter",
+            "role": "Standard conversion failure and missing-value reporting.",
+            "line_range": [
+              101,
+              220
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/termui.py",
+            "symbol": "prompt",
+            "role": "Context-less prompt conversion consumer.",
+            "line_range": [
+              143,
+              285
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "CHANGES.md",
+            "symbol": "8.5.0 ParamType changes",
+            "role": "Release compatibility record for generic conversion and prompt typing.",
+            "line_range": [
+              61,
+              67
+            ],
+            "centrality": "supporting"
+          }
+        ],
+        "invariants": [
+          {
+            "rule": "Custom convert accepts already-correct values and may receive param=None and ctx=None.",
+            "why": "Defaults and prompt input reuse the same conversion path without a full invocation context.",
+            "reference": "docs/parameter-types.md"
+          },
+          {
+            "rule": "Type failures use self.fail to produce BadParameter.",
+            "why": "Prompt catches UsageError/BadParameter and retries with the intended message.",
+            "reference": "src/click/types.py"
+          },
+          {
+            "rule": "Composite is_composite and arity determine Parameter nargs behavior.",
+            "why": "Tuple-like types must retain fixed-arity conversion semantics.",
+            "reference": "src/click/core.py"
+          },
+          {
+            "rule": "File and Path use os.path.pathsep as their envvar splitter.",
+            "why": "Path-list values differ from whitespace-split scalar values.",
+            "reference": "src/click/types.py"
+          }
+        ],
+        "pitfalls": [
+          {
+            "risk": "A custom converter assumes ctx or param is always present.",
+            "consequence": "click.prompt with the custom type fails with AttributeError.",
+            "reference": "src/click/termui.py"
+          },
+          {
+            "risk": "Choice normalization produces duplicate keys.",
+            "consequence": "Valid-looking choices cannot be matched reliably.",
+            "reference": "src/click/types.py"
+          },
+          {
+            "risk": "ParamType generic changes are tested differently across supported Python/type-checker versions.",
+            "consequence": "Custom public types can regress on older supported runtimes or static checking.",
+            "reference": "CHANGES.md"
+          }
+        ],
+        "entry_questions": [
+          "Does conversion run from prompt where param/ctx are None?",
+          "Can the value already be the target Python type?",
+          "Does this preserve composite arity, envvar splitting, and BadParameter propagation?",
+          "For File/Path, is resource cleanup registered only with a Context?"
+        ],
+        "validation": [
+          "pytest tests/test_types.py",
+          "pytest tests/test_utils/test_prompt.py",
+          "pytest tests/test_info_dict.py",
+          "uv run --locked --no-default-groups --group dev tox run -e typing"
+        ],
+        "spans_subtrees": [
+          "src/click/__init__.py",
+          "src/click/types.py",
+          "src/click/core.py",
+          "src/click/parser.py",
+          "src/click/utils.py",
+          "src/click/exceptions.py",
+          "src/click/termui.py",
+          "tests/test_types.py",
+          "docs/parameter-types.md",
+          "CHANGES.md"
+        ],
+        "stability": "high",
+        "recurrence": "high",
+        "confidence": "high",
+        "last_updated": "2026-08-26T00:00:00.000Z"
+      },
+      {
+        "concern": "CliRunner isolation and terminal stream lifecycle",
+        "one_line": "Owns the single-threaded process-global state swap and stream capture surrounding every CliRunner invocation.",
+        "covers": "CliRunner invoke/isolation, sys and fd capture, env and prompt patching, Result streams, EchoingStdin, stream ownership, filesystem isolation deprecation, and lifecycle regression tests.",
+        "excludes": "Command dispatch, parameter conversion, actual prompt implementation, terminal detection, and non-test subprocess behavior.",
+        "flows": [
+          {
+            "name": "runner invocation",
+            "description": "Capture is established, command execution runs under isolation, and all state is restored into a Result.",
+            "steps": [
+              {
+                "path": "src/click/testing.py",
+                "what_happens": "CliRunner.invoke starts optional fd capture, swaps streams/env/module hooks, runs cli.main, and captures exceptions."
+              },
+              {
+                "path": "src/click/testing.py",
+                "what_happens": "The finally path restores sys streams, environment, prompt hooks, formatting width, debugger initialization, and fd capture."
+              },
+              {
+                "path": "tests/test_testing.py",
+                "what_happens": "Capture modes, subprocess writes, stale references, prompts, and nested runner behavior are asserted."
+              },
+              {
+                "path": "tests/test_stream_lifecycle.py",
+                "what_happens": "Wrapper ownership and race-sensitive lifecycle behavior are regression-tested."
+              },
+              {
+                "path": "CHANGES.md",
+                "what_happens": "The release history records the process-global isolation and isolated-filesystem deprecations that constrain runner use."
+              }
+            ]
+          }
+        ],
+        "touchpoints": [
+          {
+            "path": "src/click/testing.py",
+            "symbol": "CliRunner.invoke",
+            "role": "End-to-end capture and invocation boundary.",
+            "line_range": [
+              427,
+              651
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/testing.py",
+            "symbol": "CliRunner.isolation",
+            "role": "Process-global state substitution and restoration.",
+            "line_range": [
+              495,
+              590
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/testing.py",
+            "symbol": "_FDCapture",
+            "role": "POSIX fd 1/2 capture strategy.",
+            "line_range": [
+              82,
+              113
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/testing.py",
+            "symbol": "StreamMixer/BytesIOCopy",
+            "role": "Merged and separate output buffers.",
+            "line_range": [
+              115,
+              134
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "tests/test_stream_lifecycle.py",
+            "symbol": "stream lifecycle tests",
+            "role": "Load-bearing ownership and race regression suite.",
+            "line_range": [
+              1,
+              502
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "tests/test_testing.py",
+            "symbol": "CliRunner capture tests",
+            "role": "Regression coverage for sys/fd capture and restoration.",
+            "line_range": [
+              1,
+              600
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "docs/testing.md",
+            "symbol": "Running tests in parallel",
+            "role": "Authoritative non-thread-safety contract.",
+            "line_range": [
+              90,
+              150
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "CHANGES.md",
+            "symbol": "8.5.0 isolation changes",
+            "role": "Release record for process-global runner lifecycle constraints.",
+            "line_range": [
+              48,
+              61
+            ],
+            "centrality": "supporting"
+          }
+        ],
+        "invariants": [
+          {
+            "rule": "CliRunner invocations are single-threaded because isolation mutates process-global state.",
+            "why": "Concurrent runs overwrite streams, environment, and prompt hooks.",
+            "reference": "docs/testing.md"
+          },
+          {
+            "rule": "All substituted globals are restored in finally.",
+            "why": "Exceptions must not leave the host test process redirected or patched.",
+            "reference": "src/click/testing.py"
+          },
+          {
+            "rule": "fd capture starts before Python-level stream isolation.",
+            "why": "This ordering captures low-level writes and subprocess output consistently.",
+            "reference": "src/click/testing.py"
+          },
+          {
+            "rule": "Pager/capture wrappers do not close borrowed underlying streams.",
+            "why": "Runner-owned streams must remain reusable across tests.",
+            "reference": "tests/test_stream_lifecycle.py"
+          }
+        ],
+        "pitfalls": [
+          {
+            "risk": "Running CliRunner concurrently or nesting isolation across threads.",
+            "consequence": "Output, environment, and prompt input leak between invocations.",
+            "reference": "docs/testing.md"
+          },
+          {
+            "risk": "Using sys capture for os.write, C-extension, or subprocess output.",
+            "consequence": "Low-level writes bypass Result output; use capture=fd where supported.",
+            "reference": "tests/test_testing.py"
+          },
+          {
+            "risk": "Asserting binary or concurrency-sensitive ordering on decoded Result.output.",
+            "consequence": "Decoding/merging normalizes bytes and arrival order is not a stable contract.",
+            "reference": "src/click/testing.py"
+          }
+        ],
+        "entry_questions": [
+          "Will invocation be concurrent or nested?",
+          "Does command output bypass sys streams?",
+          "Is the platform Windows where fd capture is unavailable?",
+          "Should assertions use bytes or decoded merged output?"
+        ],
+        "validation": [
+          "pytest tests/test_testing.py",
+          "pytest tests/test_stream_lifecycle.py -v",
+          "pytest tests/test_stream_lifecycle.py -m stress",
+          "pytest tests/test_deprecations.py -k isolated_filesystem"
+        ],
+        "spans_subtrees": [
+          "src/click/testing.py",
+          "tests/test_testing.py",
+          "tests/test_stream_lifecycle.py",
+          "tests/conftest.py",
+          "docs/testing.md",
+          "CHANGES.md"
+        ],
+        "stability": "medium",
+        "recurrence": "high",
+        "confidence": "high",
+        "last_updated": "2026-08-26T00:00:00.000Z"
+      },
+      {
+        "concern": "Terminal UI process and stream lifecycle",
+        "one_line": "Owns Click's cross-platform terminal UX boundaries: progress rendering, pagers, editors, URL launching, raw input, and their subprocess/file cleanup.",
+        "covers": "ProgressBar, pager strategies, PagerWriter, editor command resolution and temp files, open_url platform dispatch, raw terminal input, the termui lazy façade, and its utility/exception stream bridges.",
+        "excludes": "Core parsing, parameter coercion, CliRunner isolation, and general echo/style semantics.",
+        "flows": [
+          {
+            "name": "pager/editor process boundary",
+            "description": "Terminal output or user text crosses into an external pager/editor without shell execution and returns through Click-owned streams/files.",
+            "steps": [
+              {
+                "path": "src/click/__init__.py",
+                "what_happens": "The public package initializer exposes pager, editor, progress, raw-input, and styling entry points."
+              },
+              {
+                "path": "src/click/termui.py",
+                "what_happens": "Public functions lazily load the implementation and resolve color/default streams."
+              },
+              {
+                "path": "src/click/_termui_impl.py",
+                "what_happens": "Pager/editor commands are tokenized into argv lists and launched with shell=False."
+              },
+              {
+                "path": "src/click/utils.py",
+                "what_happens": "echo and _LazyFile provide the stream writing and file-wrapper behavior used by terminal helpers."
+              },
+              {
+                "path": "src/click/exceptions.py",
+                "what_happens": "Terminal process and user-input failures use ClickException or Abort for consistent reporting."
+              },
+              {
+                "path": "src/click/_termui_impl.py",
+                "what_happens": "Temporary files and borrowed streams are flushed, closed, or unlinked according to platform lifecycle rules."
+              },
+              {
+                "path": "tests/test_termui.py",
+                "what_happens": "Pager, editor, progress, raw input, ANSI, and cross-platform behavior are exercised."
+              },
+              {
+                "path": "CHANGES.md",
+                "what_happens": "The release history records pager temporary-file cleanup, progress finalization, and terminal color changes."
+              }
+            ]
+          }
+        ],
+        "touchpoints": [
+          {
+            "path": "src/click/__init__.py",
+            "symbol": "terminal API re-exports",
+            "role": "Public entry point for progress, pager, editor, raw input, and style APIs.",
+            "line_range": [
+              41,
+              53
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/_termui_impl.py",
+            "symbol": "ProgressBar",
+            "role": "Progress rendering and update/finalization semantics.",
+            "line_range": [
+              1,
+              380
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/_termui_impl.py",
+            "symbol": "_pipepager/_tempfilepager/_PagerWriter",
+            "role": "Pager process and borrowed-stream lifecycle.",
+            "line_range": [
+              430,
+              700
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/_termui_impl.py",
+            "symbol": "Editor",
+            "role": "Editor resolution, temp file handling, and subprocess argv.",
+            "line_range": [
+              700,
+              780
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/_termui_impl.py",
+            "symbol": "open_url",
+            "role": "Platform-specific external launcher boundary.",
+            "line_range": [
+              795,
+              864
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/termui.py",
+            "symbol": "progressbar/edit/launch/getchar",
+            "role": "Public lazy façade for terminal implementations.",
+            "line_range": [
+              348,
+              1015
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/utils.py",
+            "symbol": "echo/_LazyFile",
+            "role": "Terminal stream and file-wrapper bridge without owning general style semantics.",
+            "line_range": [
+              103,
+              360
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/exceptions.py",
+            "symbol": "ClickException/Abort",
+            "role": "Terminal-facing process and input failure types.",
+            "line_range": [
+              29,
+              80
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "tests/test_termui.py",
+            "symbol": "terminal UI tests",
+            "role": "Behavioral and platform regression suite.",
+            "line_range": [
+              1,
+              1498
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "CHANGES.md",
+            "symbol": "8.5.0 terminal changes",
+            "role": "Release record for pager, progress, and ANSI lifecycle behavior.",
+            "line_range": [
+              10,
+              24
+            ],
+            "centrality": "supporting"
+          }
+        ],
+        "invariants": [
+          {
+            "rule": "External pager/editor processes use argv lists and shell=False.",
+            "why": "User-controlled environment values must not become shell commands.",
+            "reference": "src/click/_termui_impl.py"
+          },
+          {
+            "rule": "Pager writers never close borrowed streams.",
+            "why": "CliRunner and embedding callers own those streams.",
+            "reference": "src/click/_termui_impl.py"
+          },
+          {
+            "rule": "Temporary pager files close before unlink.",
+            "why": "Windows rejects unlinking open files and can mask the original error.",
+            "reference": "src/click/_termui_impl.py"
+          },
+          {
+            "rule": "Progress rendering differs between tty and non-tty/platform paths.",
+            "why": "ANSI cursor controls are unsuitable for non-tty or legacy Windows output.",
+            "reference": "src/click/_termui_impl.py"
+          }
+        ],
+        "pitfalls": [
+          {
+            "risk": "Adding a platform branch without preserving pager/editor temp cleanup.",
+            "consequence": "Windows PermissionError or leaked temporary files can replace the original failure.",
+            "reference": "src/click/_termui_impl.py"
+          },
+          {
+            "risk": "Bypassing render_finish when progress updates are below update_min_steps.",
+            "consequence": "A completed progress bar can render below 100 percent.",
+            "reference": "src/click/_termui_impl.py"
+          },
+          {
+            "risk": "Assuming an editor or xdg-open exists in minimal environments.",
+            "consequence": "External launch can fail with FileNotFoundError or a misleading success status.",
+            "reference": "src/click/_termui_impl.py"
+          }
+        ],
+        "entry_questions": [
+          "Does this touch a borrowed stream or a Click-owned temporary file?",
+          "Is the command split with shlex and launched without a shell?",
+          "Does every progress exit path flush final intervals?",
+          "Are Windows, macOS, Cygwin, and POSIX branches covered?"
+        ],
+        "validation": [
+          "pytest tests/test_termui.py",
+          "pytest tests/test_utils/test_echo_via_pager.py",
+          "uv run --locked --no-default-groups --group dev tox run -e py3.14"
+        ],
+        "spans_subtrees": [
+          "src/click/__init__.py",
+          "src/click/_termui_impl.py",
+          "src/click/termui.py",
+          "src/click/utils.py",
+          "src/click/exceptions.py",
+          "src/click/_compat.py",
+          "tests/test_termui.py",
+          "docs/utils.md",
+          "CHANGES.md"
+        ],
+        "stability": "high",
+        "recurrence": "medium",
+        "confidence": "high",
+        "last_updated": "2026-08-26T00:00:00.000Z"
+      },
+      {
+        "concern": "Output streams, file wrappers, and utility I/O contract",
+        "one_line": "Owns Click's reusable output and filesystem utility semantics: safe text/bytes emission, standard-stream ownership, lazy or atomic files, display-safe filenames, and platform config paths.",
+        "covers": "echo, open_file, _LazyFile, _KeepOpenFile, _PacifyFlushWrapper, stream adapters, ANSI stripping at output boundaries, format_filename, get_app_dir, and their public exports and regression tests.",
+        "excludes": "Command dispatch and parameter conversion policy, CliRunner's process-global capture orchestration, and external pager/editor subprocess policy.",
+        "flows": [
+          {
+            "name": "public utility call to safe output or file lifecycle",
+            "description": "The public package exports utility functions, utility code resolves compatible streams or files, and errors and tests establish ownership and cleanup behavior.",
+            "steps": [
+              {
+                "path": "src/click/__init__.py",
+                "what_happens": "The public package initializer exports echo, open_file, format_filename, and get_app_dir."
+              },
+              {
+                "path": "src/click/utils.py",
+                "what_happens": "echo normalizes text/bytes and ANSI output, while open_file selects standard streams, lazy wrappers, or atomic stream opening."
+              },
+              {
+                "path": "src/click/_compat.py",
+                "what_happens": "Platform adapters provide default text streams, binary writers, ANSI decisions, and open_stream ownership information."
+              },
+              {
+                "path": "src/click/exceptions.py",
+                "what_happens": "Lazy file failures become FileError with a display-safe filename and OS hint."
+              },
+              {
+                "path": "tests/test_utils/test_echo.py",
+                "what_happens": "Text, bytes, color, stderr, and flushing behavior are asserted."
+              },
+              {
+                "path": "tests/test_utils/test_open_file.py",
+                "what_happens": "Standard-stream borrowing, lazy access, atomic writes, and close ownership are asserted."
+              }
+            ]
+          }
+        ],
+        "touchpoints": [
+          {
+            "path": "src/click/utils.py",
+            "symbol": "echo",
+            "role": "Core text/bytes/ANSI output contract with explicit flushing.",
+            "line_range": [
+              220,
+              330
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/utils.py",
+            "symbol": "open_file/_LazyFile/_KeepOpenFile",
+            "role": "Standard-stream ownership, lazy opening, and atomic file lifecycle.",
+            "line_range": [
+              103,
+              210
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/utils.py",
+            "symbol": "format_filename/get_app_dir",
+            "role": "Safe filename display and platform configuration-directory resolution.",
+            "line_range": [
+              430,
+              570
+            ],
+            "centrality": "core"
+          },
+          {
+            "path": "src/click/utils.py",
+            "symbol": "_PacifyFlushWrapper",
+            "role": "Broken-pipe-safe final flush wrapper.",
+            "line_range": [
+              535,
+              575
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/__init__.py",
+            "symbol": "utility re-exports",
+            "role": "Public package entry point for echo, open_file, format_filename, and get_app_dir.",
+            "line_range": [
+              70,
+              73
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/_compat.py",
+            "symbol": "open_stream/default stream adapters",
+            "role": "Platform-specific stream and file ownership primitives consumed by utils.",
+            "line_range": [
+              1,
+              250
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "src/click/exceptions.py",
+            "symbol": "FileError",
+            "role": "User-facing failure boundary for lazy file opening.",
+            "line_range": [
+              250,
+              330
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "tests/test_utils/test_echo.py",
+            "symbol": "echo tests",
+            "role": "Regression coverage for stream encoding, bytes, ANSI, stderr, and flushing.",
+            "line_range": [
+              1,
+              250
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "tests/test_utils/test_open_file.py",
+            "symbol": "open_file tests",
+            "role": "Regression coverage for standard-stream ownership and file modes.",
+            "line_range": [
+              1,
+              300
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "tests/test_utils/test_LazyFile.py",
+            "symbol": "LazyFile tests",
+            "role": "Regression coverage for deferred open and close semantics.",
+            "line_range": [
+              1,
+              250
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "tests/test_utils/test_KeepOpenFile.py",
+            "symbol": "KeepOpenFile tests",
+            "role": "Regression coverage for borrowed stream ownership.",
+            "line_range": [
+              1,
+              200
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "tests/test_basic.py",
+            "symbol": "basic output assertions",
+            "role": "Integration coverage that public command output reaches the expected stream.",
+            "line_range": [
+              8,
+              35
+            ],
+            "centrality": "supporting"
+          },
+          {
+            "path": "CHANGES.md",
+            "symbol": "8.5.0 utility changes",
+            "role": "Release record for output color validation and utility deprecations.",
+            "line_range": [
+              24,
+              39
+            ],
+            "centrality": "supporting"
+          }
+        ],
+        "invariants": [
+          {
+            "rule": "echo always flushes and strips ANSI sequences when the destination is not an interactive terminal unless color is forced.",
+            "why": "Library callers rely on deterministic output across terminals, files, and captured streams.",
+            "reference": "src/click/utils.py"
+          },
+          {
+            "rule": "open_file wraps borrowed standard streams so context-manager exit does not close the caller-owned stream.",
+            "why": "CLI applications commonly use '-' and must not invalidate process streams.",
+            "reference": "src/click/utils.py"
+          },
+          {
+            "rule": "Lazy and atomic writes preserve Click's FileError boundary and close-before-replace behavior.",
+            "why": "Opening or replacing a file must report a Click error without leaking handles or masking the original failure.",
+            "reference": "src/click/utils.py"
+          },
+          {
+            "rule": "Filename formatting replaces invalid filesystem bytes or surrogates before UI output.",
+            "why": "Strict output encodings must not fail merely while displaying a path.",
+            "reference": "src/click/utils.py"
+          }
+        ],
+        "pitfalls": [
+          {
+            "risk": "Closing a stream returned for '-' or treating a lazy wrapper as already open.",
+            "consequence": "An embedding application's stdin/stdout can be closed or file errors move to the wrong phase.",
+            "reference": "src/click/utils.py"
+          },
+          {
+            "risk": "Writing bytes or ANSI text through an incompatible stream without the utility adapters.",
+            "consequence": "Output is corrupted, raises an encoding error, or leaks styling into redirected output.",
+            "reference": "src/click/utils.py"
+          },
+          {
+            "risk": "Changing atomic or platform-specific open_stream behavior without testing ownership.",
+            "consequence": "Temporary files remain or replacement fails on Windows and other supported platforms.",
+            "reference": "tests/test_utils/test_open_file.py"
+          }
+        ],
+        "entry_questions": [
+          "Is the destination borrowed or owned by Click?",
+          "Does the path need lazy or atomic opening?",
+          "Can output be bytes, contain ANSI, or target a non-tty?",
+          "Will an invalid filesystem name be displayed under strict encoding?"
+        ],
+        "validation": [
+          "pytest tests/test_utils",
+          "pytest tests/test_utils/test_echo.py tests/test_utils/test_open_file.py tests/test_utils/test_LazyFile.py tests/test_utils/test_KeepOpenFile.py",
+          "uv run --locked --no-default-groups --group dev tox run -e py3.14"
+        ],
+        "spans_subtrees": [
+          "src/click/__init__.py",
+          "src/click/utils.py",
+          "src/click/_compat.py",
+          "src/click/exceptions.py",
+          "tests/test_utils",
+          "tests/test_basic.py",
+          "CHANGES.md"
+        ],
+        "stability": "high",
+        "recurrence": "high",
+        "confidence": "high",
+        "last_updated": "2026-08-26T00:00:00.000Z"
+      }
+    ],
+    "not_concerns": [
+      {
+        "candidate": "src/click",
+        "why_rejected": "A source directory, not a body of knowledge; its tracked files are covered by the execution, type, testing, terminal, and utility-I/O concerns."
+      },
+      {
+        "candidate": "utils",
+        "why_rejected": "A generic module label is not itself a specialty; the distinct output-stream and file-wrapper contract is recorded under Output streams, file wrappers, and utility I/O contract."
+      },
+      {
+        "candidate": "repository",
+        "why_rejected": "Too broad to guide specialist advice and not a distinct maintenance specialty."
+      },
+      {
+        "candidate": "authentication",
+        "why_rejected": "No authentication, credential validation, session, or authorization flow exists in this CLI library."
+      }
+    ]
+  }
+}
